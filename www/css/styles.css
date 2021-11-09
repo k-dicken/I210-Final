@@ -27,7 +27,15 @@ p {
 fonts
 */
 
+@font-face {
+    font-family: Mohave;
+    src: url(../css/fonts/Mohave/Mohave-VariableFont_wght.ttf);
+}
 
+@font-face {
+    font-family: WorkSans;
+    src: url(../css/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
 
 /*
 header
