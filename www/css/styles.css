@@ -180,6 +180,8 @@ about
     justify-content: center;
     flex-direction: column;
 
+    font-family: WorkSans;
+
     padding: 100px 200px;
 }
 
