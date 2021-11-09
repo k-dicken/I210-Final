@@ -22,7 +22,7 @@
             <a href="">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></a>
             <a href="">Breakfast</a>
             <a href="">Lunch</a>
-            <a href="">Bakery</a>
+            <a href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></a>
         </nav>
 
         <!--clickable icons on the left-->

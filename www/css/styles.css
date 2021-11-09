@@ -24,12 +24,21 @@ p {
 }
 
 /*
+fonts
+*/
+
+
+
+/*
 header
 */
 
 #header {
     position: fixed;
     width: 100%;
+    flex-wrap: wrap;
+
+    background-color: white;
 }
 
 #header-logo {
@@ -113,7 +122,9 @@ header
     background-color: seagreen;
 }
 
-/*footer*/
+/*
+footer
+*/
 
 #footer {
     display: flex;
@@ -121,10 +132,56 @@ header
     justify-content: center;
     flex-direction: column;
 
+    /*height: 250px;*/
     width: 100%;
 
-    padding: 2%;
+    padding: 80px;
 
     color: white;
     background-color: seagreen;
+}
+
+/*
+HOME PAGE
+*/
+
+/*
+hero
+*/
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 600px;
+    width: 100%;
+
+    /*background-image: ;*/
+    background-color: saddlebrown;
+}
+
+/*
+about
+*/
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 100px 200px;
+}
+
+.about-text {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.about-text p {
+    width: 45%;
 }
