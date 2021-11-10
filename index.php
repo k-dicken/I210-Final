@@ -8,9 +8,9 @@ require_once('includes/header.php');
     <div id="hero">
 
         <!--    content in hero section    -->
-        <img src="" alt="Oishii Logo">
-        <p>Insert Slogan</p>
-        <a class="hero-button" href="">Full Menu</a>
+        <p style="font-size: 52px" class="logo">Oishii</p>
+        <p>Bringing 'Cafe' right to you and your home</p>
+        <a class="hero-button" href="">FULL MENU</a>
 
     </div>
 

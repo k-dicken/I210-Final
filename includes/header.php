@@ -15,7 +15,7 @@
     <!--the top part of the header-->
     <div id="main-header">
         <!--logo-->
-        <a id="header-logo" href="index.html"><img style="width: 100px" src="" alt=""></a>
+        <a class="logo" id="header-logo" href="index.html">Oishii</a>
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
@@ -36,7 +36,7 @@
 
     <!--the bottom part of the header-->
     <div id="side-header">
-        <div id="side-header-display">welcome</div>
+        <div id="side-header-display">Our new holiday drinks are here just in time for the new season!</div>
     </div>
 
 </div>
