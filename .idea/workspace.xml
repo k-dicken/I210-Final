@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="275cb17b-7671-419b-a063-bf2a32a2a6a0" name="Changes" comment="" />
+    <list default="true" id="00e3d575-1865-4ab4-aad9-b5e000fc3c31" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="XAMPP PHP" />
-  <component name="ProjectId" id="20hPqSDb76YEH26mCtLYNrQaGov" />
+  <component name="ProjectId" id="20vAyFy8ywFEyXqk5euafx707aP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,27 +25,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="275cb17b-7671-419b-a063-bf2a32a2a6a0" name="Changes" comment="" />
-      <created>1636494037283</created>
+      <changelist id="00e3d575-1865-4ab4-aad9-b5e000fc3c31" name="Changes" comment="" />
+      <created>1636914940013</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636494037283</updated>
-      <workItem from="1636494039056" duration="86000" />
-      <workItem from="1636494146137" duration="3000" />
-      <workItem from="1636494364716" duration="1258000" />
-      <workItem from="1636495713403" duration="497000" />
-      <workItem from="1636496345750" duration="177000" />
-      <workItem from="1636496541694" duration="14000" />
-      <workItem from="1636496599860" duration="187000" />
+      <updated>1636914940013</updated>
+      <workItem from="1636914942132" duration="1182000" />
+      <workItem from="1636920487369" duration="380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

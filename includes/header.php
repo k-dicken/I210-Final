@@ -15,14 +15,14 @@
     <!--the top part of the header-->
     <div id="main-header">
         <!--logo-->
-        <a class="logo" id="header-logo" href="index.html">Oishii</a>
+        <a class="logo" id="header-logo" href="index.php">Oishii</a>
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
-            <a href="">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></a>
-            <a href="">Breakfast</a>
-            <a href="">Lunch</a>
-            <a href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></a>
+            <button onclick="displayBeverages()" id="beveragesButton">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <a href="listproducts.php?category=5">Breakfast</a>
+            <a href="listproducts.php?category=6">Lunch</a>
+            <button onclick="displayBakery()" id="bakeryButton" href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </nav>
 
         <!--clickable icons on the left-->
@@ -36,10 +36,12 @@
 
     <!--the bottom part of the header-->
     <div id="side-header">
-        <div id="side-header-display">Our new holiday drinks are here just in time for the new season!</div>
+        <div id="side-header-display">Our new holiday drinks are here just in time for the winter season!</div>
     </div>
 
 </div>
-<div class="float-spacing" style="height:100px; width: 100%"></div>
+<div class="header-height"></div>
+
+
 
 
