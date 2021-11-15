@@ -37,12 +37,12 @@ fonts
 
 @font-face {
     font-family: Mohave;
-    src: url(../css/fonts/Mohave/Mohave-VariableFont_wght.ttf);
+    src: url(fonts/Mohave/Mohave-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: WorkSans;
-    src: url(../css/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+    src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
 
 /*
@@ -119,7 +119,7 @@ header
 }
 
 .nav-category-links a {
-    margin: 0 5% 0 5%;
+    margin: 0 5%;
 }
 
 .nav-category-links a:hover {
@@ -162,10 +162,11 @@ header
 
 #side-header {
     height: 45px;
+    width: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     color: white;
 
@@ -204,6 +205,25 @@ footer
 #footer a {
     color: white;
 }
+#footer-icons{
+    height: 50px;
+    width: 15%;
+
+    /*center to page*/
+    margin: 0 auto;
+
+    /*center content within*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#footer-icons a{
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+
 
 /*
 HOME PAGE
@@ -234,6 +254,7 @@ hero
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #hero p {
@@ -258,6 +279,8 @@ about
 */
 
 #about {
+    margin: 0 auto;
+    width: 87%;
     display: flex;
     align-items: center;
     justify-content: center;

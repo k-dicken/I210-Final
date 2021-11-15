@@ -7,6 +7,11 @@ function displayBeverages() {
         "<a href=\"listproducts.php?category=3\">Hot Chocolate</a>" +
         "<a href=\"listproducts.php?category=4\">Other</a>";
 }
+function displayBrunch() {
+    displayStrip.innerHTML =
+        "<a href=\"listproducts.php?category=5\">Breakfast</a>" +
+        "<a href=\"listproducts.php?category=6\">Lunch</a>";
+}
 
 function displayBakery() {
     displayStrip.innerHTML =

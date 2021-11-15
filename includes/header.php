@@ -19,10 +19,9 @@
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
-            <button onclick="displayBeverages()" id="beveragesButton">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></button>
-            <a href="listproducts.php?category=5">Breakfast</a>
-            <a href="listproducts.php?category=6">Lunch</a>
             <button onclick="displayBakery()" id="bakeryButton" href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <button onclick="displayBeverages()" id="beveragesButton">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <button onclick="displayBrunch()" id="brunchButton">Brunch <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </nav>
 
         <!--clickable icons on the left-->

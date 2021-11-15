@@ -6,9 +6,9 @@
     <p style="margin-bottom: 40px">(317) 359-9146</p>
 
     <div id="footer-icons">
-        <a href="facebook.com"><img src="" alt="Facebook Logo"></a>
-        <a href="instagram.com"><img src="" alt="Instagram Logo"></a>
-        <a href="twitter.com"><img src="" alt="Twitter Logo"></a>
+        <a href="facebook.com" target="_blank"><img src="www/img/icons/facebook.svg" alt="Facebook Logo"></a>
+        <a href="instagram.com" target="_blank"><img src="www/img/icons/instagram.svg" alt="Instagram Logo"></a>
+        <a href="twitter.com" target="_blank"><img src="www/img/icons/twitter.svg" alt="Twitter Logo"></a>
     </div>
 </div>
 
