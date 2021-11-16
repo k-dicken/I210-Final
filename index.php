@@ -8,7 +8,7 @@ require_once('includes/header.php');
     <div id="hero">
 
         <!--    content in hero section    -->
-        <p style="font-size: 52px" class="logo">Oishii</p>
+        <p style="font-size: 56px" class="logo">Oishii</p>
         <p>Bringing 'Cafe' right to you and your home</p>
 <!--        <a class="hero-button" href="">FULL MENU</a>-->
 

@@ -23,12 +23,39 @@ p {
     margin-bottom: 16px;
 }
 
+/*
+REUSED CLASSES (FONTS, SECTIONS, CENTERING)
+*/
+
 .logo {
     font-family: WorkSans;
     font-weight: bold;
     font-size: 32px;
 
     text-decoration: none;
+}
+
+.p-title {
+    font-family: WorkSans;
+    font-size: 32px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.p-subtitle {
+    font-family: WorkSans;
+    font-size: 24px;
+}
+
+.p-textLarge {
+    font-family: WorkSans;
+    font-size: 18px;
+}
+
+.p-textSmall {
+    font-family: WorkSans;
+    font-size: 12px;
 }
 
 /*
@@ -97,7 +124,7 @@ header
 
     font-family: WorkSans;
     font-weight: bold;
-    font-size: 16px;
+    /*font-size: 16px;*/
 
     margin: 0 5% 0 5%;
 }
@@ -501,5 +528,25 @@ INDIVIDUAL PRODUCT PAGES
     margin-top: 10px;
 }
 
+/*
+LOGIN PAGE
+*/
+
+#login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+
+    padding: 100px;
+    margin: 0 auto;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+
+}
 
 
