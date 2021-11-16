@@ -6,6 +6,7 @@ structure
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: red solid 1px;*/
 }
 
 html,
@@ -123,7 +124,9 @@ header
 }
 
 .nav-category-links a:hover {
-    color: #4F5D2F;
+    /*color: #4F5D2F;*/
+    color: #EE7B30;
+
 }
 
 .nav-category-links img {
@@ -159,6 +162,9 @@ header
 
     background-color: #5D6F30;
 }
+.signin-button:hover {
+    background-color: #EE7B30;
+}
 
 #side-header {
     height: 45px;
@@ -187,13 +193,13 @@ footer
 #footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 
-    /*height: 250px;*/
+    min-height: 350px;
     width: 100%;
 
-    padding: 60px;
+    padding: 30px 0 40px 0;
 
     font-family: WorkSans;
     font-size: 16px;
@@ -201,7 +207,13 @@ footer
 
     background-color: #5D6F30;
 }
-
+#footer .contact-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+}
 #footer a {
     color: white;
 }
@@ -221,6 +233,10 @@ footer
 #footer-icons img{
     height: 35px;
     width: 35px;
+}
+#footer .copy{
+    font-size: 12px;
+    color: rgba(255,255,255,.38);
 }
 
 
@@ -394,8 +410,7 @@ Products List Page
 
 .addCartButton:hover {
     cursor: pointer;
-
-    background-color: grey;
+    background-color: #ff6500;
 }
 
 .addCartButton img {
@@ -470,7 +485,7 @@ INDIVIDUAL PRODUCT PAGES
     font-family: WorkSans;
     font-size: 18px;
 
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 
     padding: 15px 25px;
@@ -478,7 +493,9 @@ INDIVIDUAL PRODUCT PAGES
     color: white;
     background-color: #EE7B30;
 }
-
+#product-details-info .addToOrder-button:hover {
+    background-color: #ff6500;
+}
 #product-details-info .line {
     height: 1px;
     width: 100%;
