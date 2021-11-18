@@ -5,6 +5,8 @@
     <p style="margin-bottom: 5px">13590 Matcha Way Indianapolis, IN 40336</p>
     <p style="margin-bottom: 40px">(317) 359-9146</p>
 
+    <a href="createproduct.php">Add Product</a>
+
     <div id="footer-icons">
         <a href="facebook.com" target="_blank"><img src="www/img/icons/facebook.svg" alt="Facebook Logo"></a>
         <a href="instagram.com" target="_blank"><img src="www/img/icons/instagram.svg" alt="Instagram Logo"></a>

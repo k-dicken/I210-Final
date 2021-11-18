@@ -7,7 +7,7 @@ require_once('includes/header.php');
 
 <div id="login">
 
-    <h2>Sign in</h2>
+    <p class="p-title">Sign in</p>
 
     <form action="userprofile.php" method="post">
         <label for="username">Username</label>
@@ -16,10 +16,10 @@ require_once('includes/header.php');
         <label for="password">Password</label>
         <input name="password" type="password" class="login-field" required>
 
-        <input type="submit" name="Submit" id="submit-button" value="Sign In"/>
+        <input type="submit" name="Submit" id="submit" value="Sign In"/>
     </form>
 
-    <p>Don't have an account? <a href="usercreateaccount.php">Create One!</a></p>
+    <p class="p-textLarge">Don't have an account? <a href="usercreateaccount.php">Create One!</a></p>
 
 </div>
 

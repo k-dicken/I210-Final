@@ -51,34 +51,10 @@ if (!$row = $query->fetch_assoc()) {
         <div class="line"></div>
         <p class="ingredients">Ingredients</p>
         <p class="ingredients-list"><?php echo $row['ingredients'] ?></p>
+        <br>
+        <a href="editproduct.php?id=<?php echo $row['product_id'] ?>">Edit Product</a>
     </div>
 </div>
-
-<!--    <h2>Product Details</h2>-->
-<!--    <table id="productdetails" class="productdetails">-->
-<!--        <tr>-->
-<!--            <td class="col1">-->
-<!--                <-- display product image -->
-<!--                <img src="--><?php //$row['images'] ?><!--" alt="">-->
-<!--            </td>-->
-<!--            <td class="col2">-->
-<!--                <h4>Name:</h4>-->
-<!--                <h4>Category:</h4>-->
-<!--                <h4>Calories:</h4>-->
-<!--                <h4>Price:</h4>-->
-<!--                <h4>Ingredients:</h4>-->
-<!--                <h4>Description:</h4>-->
-<!--            </td>-->
-<!--            <td class="col3">-->
-<!--                <p>--><?php //echo $row['name'] ?><!--</p>-->
-<!--                <p>--><?php //echo $row['category_id'] ?><!--</p>-->
-<!--                <p>--><?php //echo $row['calories'] ?><!--</p>-->
-<!--                <p>--><?php //echo $row['price'] ?><!--</p>-->
-<!--                <p>--><?php //echo $row['ingredients'] ?><!--</p>-->
-<!--                <p>--><?php //echo $row['description'] ?><!--</p>-->
-<!--            </td>-->
-<!--        </tr>-->
-<!--    </table>-->
 
 <?php
 require_once ('includes/footer.php');
