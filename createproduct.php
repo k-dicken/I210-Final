@@ -15,7 +15,7 @@ $name = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'name', FILTER_SA
 $description = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'description', FILTER_SANITIZE_STRING)));
 $category_id = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'category_id', FILTER_SANITIZE_NUMBER_INT)));
 $image = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'image', FILTER_SANITIZE_STRING)));
-$price = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'price', FILTER_SANITIZE_NUMBER_FLOAT)));
+$price = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'price', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION)));
 $calories = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'calories', FILTER_SANITIZE_NUMBER_INT)));
 $ingredients = $conn->real_escape_string(trim(filter_input(INPUT_GET, 'ingredients', FILTER_SANITIZE_STRING)));
 

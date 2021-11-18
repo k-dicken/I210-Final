@@ -42,7 +42,7 @@ if (!$row = $query->fetch_assoc()) {
 ?>
 
 <div id="product-details">
-    <img src="<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>">
+    <div class="product-details-image" style="background-image: url('www/img/images/<?php echo $row['image'] ?>')" alt="<?php echo $row['name'] ?>"></div>
     <div id="product-details-info">
         <div class="top">
             <div class="title-card">

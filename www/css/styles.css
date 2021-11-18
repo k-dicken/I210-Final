@@ -147,7 +147,7 @@ header
 
 #main-header button:hover {
     /*color: #5D6F30;*/
-    color: #EE7B30;
+    color: #49784f;
 
     cursor: pointer;
 }
@@ -437,7 +437,7 @@ Products List Page
 
 .product-image {
     height: 300px;
-    width: 100%;
+    width: 300px;
 
     border-radius: 50%;
     text-align: center;
@@ -508,11 +508,15 @@ INDIVIDUAL PRODUCT PAGES
 
 }
 
-#product-details img {
+#product-details .product-details-image {
     width: 45%;
+
 /*    standin background color*/
     background-color: lightgrey;
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #product-details-info {
