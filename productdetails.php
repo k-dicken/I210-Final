@@ -46,7 +46,7 @@ if (!$row = $query->fetch_assoc()) {
     <div id="product-details-info">
         <div class="top">
             <div class="title-card">
-                <p class="title"><?php echo $row['name']?></p>
+                <p class="title"><?php echo $row['name']?>&nbsp;</p>
                 <p class="calories"><?php echo $row['calories'] ?>&nbsp;kcal</p>
             </div>
             <p class="price">$<?php echo $row['price'] ?></p>
@@ -58,17 +58,14 @@ if (!$row = $query->fetch_assoc()) {
         </div>
 
         <div class="line"></div>
-<<<<<<< HEAD
-        <p class="ingredients">Ingredients</p>
-        <p class="ingredients-list"><?php echo $row['ingredients'] ?></p>
-        <br>
+
+        <div class="bottom">
+            <p class="ingredients">Ingredients</p>
+            <p class="ingredients-list"><?php echo $row['ingredients'] ?></p>
+        </div>
+
         <a href="editproduct.php?id=<?php echo $row['product_id'] ?>">Edit Product</a>
-=======
-            <div class="bottom">
-                <p class="ingredients">Ingredients</p>
-                <p class="ingredients-list"><?php echo $row['ingredients'] ?></p>
-            </div>
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
+
     </div>
 </div>
 

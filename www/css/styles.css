@@ -53,6 +53,8 @@ REUSED CLASSES (FONTS, SECTIONS, CENTERING)
     font-weight: bold;
 
     text-decoration: none;
+
+
 }
 
 .p-subtitle {
@@ -123,14 +125,13 @@ header
 }
 
 #main-header a {
-    color: #4F5D2F;
+    color: black;
 
-    /*color: black;*/
     text-decoration: none;
 }
+
 #main-header a:hover {
     color: #EE7B30;
-
 }
 
 #main-header button {
@@ -142,9 +143,6 @@ header
 
     font-family: WorkSans;
     font-weight: bold;
-    /*font-size: 16px;*/
-
-    margin: 0 5% 0 5%;
 }
 
 #main-header button:hover {
@@ -157,7 +155,7 @@ header
 .nav-category-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     font-weight: bold;
     font-size: 16px;
@@ -206,7 +204,7 @@ header
 
     margin: 0 7%;
 
-    background-color: #5D6F30;
+    background-color: #49784f;
 }
 .signin-button:hover {
     background-color: #EE7B30;
@@ -222,7 +220,7 @@ header
 
     color: white;
 
-    background-color: #5D6F30;
+    background-color: #49784f;
 }
 
 #side-header-display a {
@@ -239,45 +237,41 @@ footer
 #footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 
     min-height: 280px;
     width: 100%;
 
-    padding: 30px 0 40px 0;
+    padding: 60px 0 40px 0;
 
     font-family: WorkSans;
     font-size: 16px;
     color: white;
 
-    background-color: #5D6F30;
+    background-color: #49784f;
 }
 #footer .contact-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 0;
+
+    margin-bottom: 20px;
 }
 #footer a {
     color: white;
 }
-#footer .socials{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-#footer .socials .copy{
+
+#footer .copy{
     margin: 15px auto;
-    font-size: 10px;
-    color: rgba(255,255,255,.38);
+    font-size: 12px;
+    color: rgba(255,255,255,.75);
 }
 #footer-icons{
     width: 13%;
 
-    /*center to page*/
-    margin: 0 auto;
+    margin: 40px 0 20px 0;
 
     /*center content within*/
     display: flex;
@@ -306,7 +300,7 @@ hero
     justify-content: center;
     flex-direction: column;
 
-    height: calc(100vh - 115px);
+    height: 600px;
     width: 100%;
 
     color: white;
@@ -327,7 +321,7 @@ hero
 
 #hero p {
     font-size: 24px;
-    text-shadow: 0px 0px 15px rgba(0,0,0,.4);
+    /*text-shadow: 0px 0px 15px rgba(0,0,0,.4);*/
     /*text-shadow: 0px 0px 15px #000000;*/
 }
 #hero p span{
@@ -357,13 +351,9 @@ about
 */
 
 #about {
-    min-height: calc(100vh - 115px);
+    /*min-height: calc(100vh - 115px);*/
     margin: 0 auto;
-<<<<<<< HEAD
     width: 80%;
-=======
-    width: 65%;
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,22 +361,19 @@ about
 
     font-family: WorkSans;
 
-<<<<<<< HEAD
-    padding: 100px 0;
-=======
-    padding: 30px 0 60px 0;
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
+
+    padding: 100px 0 140px 0;
 }
 
 .about-text {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .about-text p {
-    width: 45%;
+    width: 40%;
 }
 
 /*
@@ -512,54 +499,44 @@ INDIVIDUAL PRODUCT PAGES
 */
 
 #product-details {
-<<<<<<< HEAD
     width: 100%;
-    min-height: 100%;
-
-    /*position: relative;*/
-
-=======
-    width: 65%;
-    height: calc(100vh - 115px);
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
+    min-height: calc(100vh - 115px);
 
     display: flex;
     justify-content: space-between;
-    margin:0 auto;
-
-    padding: 40px 40px;
+    /*margin: 0 auto;*/
 
 }
 
 #product-details img {
-    width: 50%;
-    border-radius: 40px;
+    width: 45%;
 /*    standin background color*/
-    background-color: #EE7B30;
+    background-color: lightgrey;
 
 }
 
 #product-details-info {
-    width: 50% ;
-    margin-left: 30px;
+    width: 55% ;
 
+    padding: 5%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
 }
-#product-details-info .top{
-    height:69%;
-    width: 100%;
 
+#product-details-info .top{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     margin-bottom: 30px;
 
+}
+
+#product-details-info .top .title-card {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
 }
 
 #product-details-info .top .title {
@@ -567,29 +544,35 @@ INDIVIDUAL PRODUCT PAGES
      font-size: 36px;
      font-weight: bold;
 
-     margin-bottom: 0px;
+    margin-bottom: 6px;
 }
+
 #product-details-info .top .calories {
     font-family: WorkSans;
     font-size: 14px;
     font-weight: bold;
 }
+
 #product-details-info .top .description {
     font-family: WorkSans;
+
+    margin-bottom: 60px;
 }
+
 #product-details-info .top .price {
     font-family: WorkSans;
     font-size: 24px;
+
+    margin: 10px 0 30px 0;
 }
+
 #product-details-info .addToOrder-button {
+    width: 200px;
+
     font-family: WorkSans;
     font-size: 18px;
 
-<<<<<<< HEAD
     border-radius: 20px;
-=======
-    border-radius: 10px;
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
     border: none;
 
     padding: 15px 25px;
@@ -597,22 +580,23 @@ INDIVIDUAL PRODUCT PAGES
     color: white;
     background-color: #EE7B30;
 }
+
 #product-details-info .addToOrder-button:hover {
-    background-color: #ff6500;
+    background-color: grey;
 }
+
 #product-details-info .line {
     height: 1px;
     width: 100%;
 
-    margin: 0 auto;
+    margin: 60px 0;
 
     background-color: black;
 }
 #product-details-info .bottom{
-    height:29%;
     width: 100%;
 
-    padding-top: 15px;
+    margin-bottom: 60px;
 }
 
 #product-details-info .bottom .ingredients {
@@ -626,8 +610,9 @@ INDIVIDUAL PRODUCT PAGES
     font-weight: normal;
     font-size: 14px;
 
-    margin-top: 8px;
+    margin-top: 10px;
 }
+
 
 /*#product-details a {*/
 /*    position: absolute;*/

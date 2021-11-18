@@ -8,13 +8,9 @@ require_once('includes/header.php');
     <div id="hero">
 
         <!--    content in hero section    -->
-<<<<<<< HEAD
         <p style="font-size: 56px" class="logo">Oishii</p>
-        <p>Bringing 'Cafe' right to you and your home</p>
-=======
-        <p style="font-size: 52px" class="logo">Oishii</p>
-        <p>Order '<span>Delicious</span>' Directly to Your <span>Door</span>.</p>
->>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
+        <p>Order 'Delicious' Right to Your Door.</p>
+
 <!--        <a class="hero-button" href="">FULL MENU</a>-->
 
     </div>
@@ -22,7 +18,7 @@ require_once('includes/header.php');
     <!--    about section    -->
     <div id="about">
         <!--    title    -->
-        <h2>ABOUT US</h2>
+        <p class="p-title">ABOUT US</p>
 
         <!--    section with description text    -->
         <div class="about-text">
