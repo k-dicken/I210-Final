@@ -6,6 +6,7 @@ structure
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: red solid 1px;*/
 }
 
 html,
@@ -122,8 +123,14 @@ header
 }
 
 #main-header a {
-    color: black;
+    color: #4F5D2F;
+
+    /*color: black;*/
     text-decoration: none;
+}
+#main-header a:hover {
+    color: #EE7B30;
+
 }
 
 #main-header button {
@@ -141,7 +148,9 @@ header
 }
 
 #main-header button:hover {
-    color: #5D6F30;
+    /*color: #5D6F30;*/
+    color: #EE7B30;
+
     cursor: pointer;
 }
 
@@ -156,13 +165,15 @@ header
     width: 50%;
 }
 
-.nav-category-links a {
-    margin: 0 5%;
-}
+/*.nav-category-links a {*/
+/*    margin: 0 5%;*/
+/*}*/
 
-.nav-category-links a:hover {
-    color: #4F5D2F;
-}
+/*.nav-category-links a:hover {*/
+/*    !*color: #4F5D2F;*!*/
+/*    color: #EE7B30;*/
+
+/*}*/
 
 .nav-category-links img {
     height: 10px;
@@ -197,6 +208,9 @@ header
 
     background-color: #5D6F30;
 }
+.signin-button:hover {
+    background-color: #EE7B30;
+}
 
 #side-header {
     height: 45px;
@@ -225,13 +239,13 @@ footer
 #footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 
-    /*height: 250px;*/
+    min-height: 280px;
     width: 100%;
 
-    padding: 60px;
+    padding: 30px 0 40px 0;
 
     font-family: WorkSans;
     font-size: 16px;
@@ -239,12 +253,27 @@ footer
 
     background-color: #5D6F30;
 }
-
+#footer .contact-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+}
 #footer a {
     color: white;
 }
+#footer .socials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#footer .socials .copy{
+    margin: 15px auto;
+    font-size: 10px;
+    color: rgba(255,255,255,.38);
+}
 #footer-icons{
-    height: 45px;
     width: 13%;
 
     /*center to page*/
@@ -262,6 +291,7 @@ footer
 }
 
 
+
 /*
 HOME PAGE
 */
@@ -276,7 +306,7 @@ hero
     justify-content: center;
     flex-direction: column;
 
-    height: 600px;
+    height: calc(100vh - 115px);
     width: 100%;
 
     color: white;
@@ -284,8 +314,10 @@ hero
 
     background-image: linear-gradient(
             to bottom,
-            rgba(118, 86, 86, 0.5),
-            rgba(118, 86, 86, 0.5)
+            rgba(104, 94, 94, 0.5),
+            rgba(90, 70, 70, 0.7)
+            /*rgba(118, 86, 86, 0.5),*/
+            /*rgba(90, 60, 60, 0.7)*/
     ),
     url(../img/images/hero.jpg);
     background-position: center;
@@ -295,6 +327,16 @@ hero
 
 #hero p {
     font-size: 24px;
+    text-shadow: 0px 0px 15px rgba(0,0,0,.4);
+    /*text-shadow: 0px 0px 15px #000000;*/
+}
+#hero p span{
+    /*color: #5D6F30;*/
+    font-weight: bold;
+    font-size: 26px;
+
+    color: #EE7B30;
+    /*font-family: Mohave;*/
 }
 
 .hero-button {
@@ -315,8 +357,13 @@ about
 */
 
 #about {
+    min-height: calc(100vh - 115px);
     margin: 0 auto;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 65%;
+>>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,14 +371,18 @@ about
 
     font-family: WorkSans;
 
+<<<<<<< HEAD
     padding: 100px 0;
+=======
+    padding: 30px 0 60px 0;
+>>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
 }
 
 .about-text {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .about-text p {
@@ -431,8 +482,7 @@ Products List Page
 
 .addCartButton:hover {
     cursor: pointer;
-
-    background-color: grey;
+    background-color: #ff6500;
 }
 
 .addCartButton img {
@@ -462,55 +512,84 @@ INDIVIDUAL PRODUCT PAGES
 */
 
 #product-details {
+<<<<<<< HEAD
     width: 100%;
     min-height: 100%;
 
     /*position: relative;*/
 
+=======
+    width: 65%;
+    height: calc(100vh - 115px);
+>>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
 
     display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+
+    padding: 40px 40px;
+
 }
 
 #product-details img {
-    width: 42%;
+    width: 50%;
+    border-radius: 40px;
+/*    standin background color*/
+    background-color: #EE7B30;
+
 }
 
 #product-details-info {
-    width: 58% ;
+    width: 50% ;
+    margin-left: 30px;
 
-    padding: 80px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#product-details-info .top{
+    height:69%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
 }
 
-#product-details-info .title {
+#product-details-info .top .title {
+     font-family: WorkSans;
+     font-size: 36px;
+     font-weight: bold;
+
+     margin-bottom: 0px;
+}
+#product-details-info .top .calories {
     font-family: WorkSans;
-    font-size: 36px;
-    font-weight: bold;
-
-    margin-bottom: 10px;
-}
-
-#product-details-info .calories {
     font-size: 14px;
+    font-weight: bold;
 }
-
-#product-details-info .price {
+#product-details-info .top .description {
+    font-family: WorkSans;
+}
+#product-details-info .top .price {
     font-family: WorkSans;
     font-size: 24px;
-
-    margin-bottom: 40px;
 }
-
-#product-details-info .description {
-    font-family: WorkSans;
-
-    margin-bottom: 50px;
-}
-
 #product-details-info .addToOrder-button {
     font-family: WorkSans;
     font-size: 18px;
 
+<<<<<<< HEAD
     border-radius: 20px;
+=======
+    border-radius: 10px;
+>>>>>>> f857b114c81dc8f47e60c6985e1142eab452cdd8
     border: none;
 
     padding: 15px 25px;
@@ -518,27 +597,36 @@ INDIVIDUAL PRODUCT PAGES
     color: white;
     background-color: #EE7B30;
 }
-
+#product-details-info .addToOrder-button:hover {
+    background-color: #ff6500;
+}
 #product-details-info .line {
     height: 1px;
     width: 100%;
 
-    margin: 60px auto;
+    margin: 0 auto;
 
     background-color: black;
 }
+#product-details-info .bottom{
+    height:29%;
+    width: 100%;
 
-#product-details-info .ingredients {
+    padding-top: 15px;
+}
+
+#product-details-info .bottom .ingredients {
     font-family: WorkSans;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-#product-details-info .ingredients-list {
+#product-details-info .bottom .ingredients-list {
     font-family: WorkSans;
     font-weight: normal;
+    font-size: 14px;
 
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 /*#product-details a {*/
