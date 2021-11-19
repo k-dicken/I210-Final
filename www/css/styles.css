@@ -448,7 +448,15 @@ Products List Page
     border-radius: 50%;
     text-align: center;
 
+<<<<<<< Updated upstream
     background-color: #000000;
+=======
+    background-color: lightgrey;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> Stashed changes
 }
 
 #product span {
@@ -623,6 +631,7 @@ INDIVIDUAL PRODUCT PAGES
     margin-top: 10px;
 }
 
+<<<<<<< Updated upstream
 #product-details-info .edit-product {
     width: 40%;
     display: flex;
@@ -643,6 +652,8 @@ INDIVIDUAL PRODUCT PAGES
 /*    bottom: 60px;*/
 /*}*/
 
+=======
+>>>>>>> Stashed changes
 /*
 ADD PRODUCT
 */
