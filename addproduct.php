@@ -21,7 +21,6 @@ require_once ('includes/header.php');
                 <input name="category_id" placeholder="Product Category #" class="section" type="text">
                 <textarea name="description" placeholder="Product Description" name="description" class="description section" cols="60" rows="6"></textarea>
 
-                <button style="background-color: grey" class="addToOrder-button" disabled>Add To Order</button>
             </div>
 
             <div class="line"></div>

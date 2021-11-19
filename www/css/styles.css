@@ -97,7 +97,7 @@ header
 
     font-family: WorkSans;
 
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 /* moves all elements on the page down with a div so header does not cover content*/
@@ -121,11 +121,12 @@ header
 
     margin: 0 3% 0 3%;
 
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 #main-header a {
-    color: black;
+    color: #4F5D2F;
+    text-shadow: 0px 0px 5px rgba(0,60,30,.4);
 
     text-decoration: none;
 }
@@ -135,11 +136,10 @@ header
 }
 
 #main-header button {
-    color: black;
+    color: #000000;
     text-decoration: none;
 
     border: none;
-    background-color: transparent;
 
     font-family: WorkSans;
     font-weight: bold;
@@ -155,7 +155,7 @@ header
 .nav-category-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     font-weight: bold;
     font-size: 16px;
@@ -163,15 +163,9 @@ header
     width: 50%;
 }
 
-/*.nav-category-links a {*/
-/*    margin: 0 5%;*/
-/*}*/
-
-/*.nav-category-links a:hover {*/
-/*    !*color: #4F5D2F;*!*/
-/*    color: #EE7B30;*/
-
-/*}*/
+.nav-category-links button {
+    background-color: #FFFFFF;
+}
 
 .nav-category-links img {
     height: 10px;
@@ -218,13 +212,13 @@ header
     align-items: center;
     justify-content: space-around;
 
-    color: white;
+    color: #FFFFFF;
 
     background-color: #49784f;
 }
 
 #side-header-display a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 
     margin: 0 15px;
@@ -247,7 +241,7 @@ footer
 
     font-family: WorkSans;
     font-size: 16px;
-    color: white;
+    color: #FFFFFF;
 
     background-color: #49784f;
 }
@@ -260,7 +254,7 @@ footer
     margin-bottom: 20px;
 }
 #footer a {
-    color: white;
+    color: #FFFFFF;
 }
 
 #footer .copy{
@@ -300,10 +294,16 @@ hero
     justify-content: center;
     flex-direction: column;
 
-    height: 600px;
+    /*height: 600px;*/
+    min-height: calc(100vh - 115px);
+    /*setting the height like this is friendlier for resizing the browser.
+    VH=View Height and targets the browser height
+    you can do the same thing with VW=View Width and targets the browser width.
+    115px subracted is from the nav bar.*/
+
     width: 100%;
 
-    color: white;
+    color: #FFFFFF;
     font-family: WorkSans;
 
     background-image: linear-gradient(
@@ -321,15 +321,16 @@ hero
 
 #hero p {
     font-size: 24px;
-    /*text-shadow: 0px 0px 15px rgba(0,0,0,.4);*/
-    /*text-shadow: 0px 0px 15px #000000;*/
+    text-shadow: 0px 0px 15px rgba(60,30,0,.8);
 }
 #hero p span{
     /*color: #5D6F30;*/
     font-weight: bold;
     font-size: 26px;
 
-    color: #EE7B30;
+    color: #f0a16e;
+    /*text-shadow: 0px 0px 15px rgba(0,0,0,.4);*/
+
     /*font-family: Mohave;*/
 }
 
@@ -341,7 +342,7 @@ hero
     border-radius: 20px;
     font-weight: bold;
 
-    color: white;
+    color: #FFFFFF;
 
     background-color: #EE7B30;
 }
@@ -351,9 +352,14 @@ about
 */
 
 #about {
-    /*min-height: calc(100vh - 115px);*/
+    min-height: calc(100vh - 115px);
+    /*setting the height like this is friendlier for resizing the browser.
+    VH=View Height and targets the browser height
+    you can do the same thing with VW=View Width and targets the browser width.
+    115px subracted is from the nav bar.*/
+
     margin: 0 auto;
-    width: 80%;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -362,14 +368,14 @@ about
     font-family: WorkSans;
 
 
-    padding: 100px 0 140px 0;
+    padding: 30px 0 60px 0;
 }
 
 .about-text {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .about-text p {
@@ -394,7 +400,7 @@ Products List Page
     font-size: 36px;
     font-weight: bold;
 
-    color: black;
+    color: #000000;
     text-decoration: none;
 
     margin-bottom: 0;
@@ -432,7 +438,7 @@ Products List Page
 
 #product a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .product-image {
@@ -442,7 +448,7 @@ Products List Page
     border-radius: 50%;
     text-align: center;
 
-    background-color: black;
+    background-color: #000000;
 }
 
 #product span {
@@ -581,12 +587,12 @@ INDIVIDUAL PRODUCT PAGES
 
     padding: 15px 25px;
 
-    color: white;
+    color: #FFFFFF;
     background-color: #EE7B30;
 }
 
 #product-details-info .addToOrder-button:hover {
-    background-color: grey;
+    background-color: #ff6500;
 }
 
 #product-details-info .line {
@@ -595,7 +601,7 @@ INDIVIDUAL PRODUCT PAGES
 
     margin: 60px 0;
 
-    background-color: black;
+    background-color: #000000;
 }
 #product-details-info .bottom{
     width: 100%;
@@ -615,6 +621,20 @@ INDIVIDUAL PRODUCT PAGES
     font-size: 14px;
 
     margin-top: 10px;
+}
+
+#product-details-info .edit-product {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Mohave;
+}
+#product-details-info .edit-product a{
+    text-decoration: none;
+    color: #000000;
+}
+#product-details-info .edit-product a:hover{
+    color: #EE7B30;
 }
 
 
@@ -657,11 +677,16 @@ ADD PRODUCT
 .product-form .submit-button {
     padding: 10px 30px;
     margin-top: 40px;
+    border: none;
 
     border-radius: 20px;
 
-    color: white;
-    background-color: #5D6F30;
+    color: #FFFFFF;
+    background-color: #EE7B30;
+}
+.product-form .submit-button:hover {
+    background-color: #FF6500;
+
 }
 
 /*

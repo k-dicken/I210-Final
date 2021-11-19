@@ -55,6 +55,11 @@ $row = $query->fetch_assoc();
 
             <input name="category_id" placeholder="Product Category #" class="section" type="text" value="<?php echo $row['category_id'] ?>">
             <textarea name="description" placeholder="Product Description" name="description" class="description section" cols="60" rows="6"><?php echo $row['description'] ?></textarea>
+<<<<<<< HEAD
+=======
+
+<!--            <button style="background-color: grey" class="addToOrder-button" disabled>Add To Order</button>-->
+>>>>>>> 7ce23e3a0a9f2875c8265d54500f511aaefde9ff
         </div>
 
         <div class="line"></div>

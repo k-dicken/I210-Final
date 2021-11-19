@@ -9,7 +9,7 @@ require_once('includes/header.php');
 
         <!--    content in hero section    -->
         <p style="font-size: 56px" class="logo">Oishii</p>
-        <p>Order 'Delicious' Right to Your Door.</p>
+        <p>Order '<span>Delicious</span>' to Your <span>Door</span>.</p>
 
 <!--        <a class="hero-button" href="">FULL MENU</a>-->
 

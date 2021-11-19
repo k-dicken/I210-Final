@@ -63,11 +63,11 @@ if (!$row = $query->fetch_assoc()) {
             <p class="ingredients">Ingredients</p>
             <p class="ingredients-list"><?php echo $row['ingredients'] ?></p>
         </div>
-
-        <div style="display: flex">
+        <div class="edit-product">
             <a href="editproduct.php?id=<?php echo $row['product_id'] ?>">Edit Product</a>&nbsp;||&nbsp;
             <a href="deleteproduct.php?id=<?php echo $row['product_id'] ?>">Delete Product</a>
         </div>
+
 
 
     </div>
