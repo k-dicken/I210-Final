@@ -15,20 +15,20 @@
     <!--the top part of the header-->
     <div id="main-header">
         <!--logo-->
-        <a id="header-logo" href="index.html"><img style="width: 100px" src="" alt=""></a>
+        <div id="header-logo" class="logo"><a class="p-title" href="index.php">Oishii</a></div>
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
-            <a href="">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></a>
-            <a href="">Breakfast</a>
-            <a href="">Lunch</a>
-            <a href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></a>
+            <button id="beveragesButton" class="p-textLarge" onclick="displayBeverages()">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <a class="p-textLarge"  href="listproducts.php?category=5">Breakfast</a>
+            <a class="p-textLarge" href="listproducts.php?category=6">Lunch</a>
+            <button id="bakeryButton" class="p-textLarge" onclick="displayBakery()">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </nav>
 
         <!--clickable icons on the left-->
         <nav class="nav-icon-links">
             <a href=""><img src="www/img/icons/search.svg" alt=""></a>
-            <a class="signin-button" style="color: white" href="">SIGN IN</a>
+            <a class="signin-button" style="color: white" href="userlogin.php">SIGN IN</a>
             <a href=""><img src="www/img/icons/shopping-bag.svg" alt=""></a>
         </nav>
 
@@ -36,10 +36,12 @@
 
     <!--the bottom part of the header-->
     <div id="side-header">
-        <div id="side-header-display">welcome</div>
+        <div id="side-header-display">Our new holiday drinks are here just in time for the winter season!</div>
     </div>
 
 </div>
-<div class="float-spacing" style="height:100px; width: 100%"></div>
+<div class="header-height"></div>
+
+
 
 
