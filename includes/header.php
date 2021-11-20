@@ -15,7 +15,9 @@
     <!--the top part of the header-->
     <div id="main-header">
         <!--logo-->
-        <div id="header-logo" class="logo"><a class="p-title" href="index.php">Oishii</a></div>
+        <div id="header-logo" class="logo"><a class="p-title" href="index.php">Oishii</a>
+            <a <nav id="navbar" class="nav-category-links" href="addproduct.php">Add Product</a>
+        </div>
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
