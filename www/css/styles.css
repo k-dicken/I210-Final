@@ -98,6 +98,7 @@ header
     font-family: WorkSans;
 
     background-color: #FFFFFF;
+    z-index: 99;
 }
 
 /* moves all elements on the page down with a div so header does not cover content*/
@@ -174,16 +175,16 @@ header
 .nav-icon-links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 
-    width: 22%;
+    width: 20%;
 }
+
 
 .nav-icon-links img {
     height: 32px;
     width: 32px;
 }
-
 
 .signin-button {
     display: flex;
@@ -195,7 +196,7 @@ header
 
     height: 36px;
 
-    margin: 0 7%;
+    /*margin: 0 7%;*/
 
     background-color: #49784f;
 }
@@ -233,7 +234,7 @@ footer
     justify-content: center;
     flex-direction: column;
 
-    min-height: 280px;
+    height: 70vh;
     width: 100%;
 
     padding: 60px 0 40px 0;
@@ -316,6 +317,7 @@ hero
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #hero p {
@@ -351,7 +353,7 @@ about
 */
 
 #about {
-    min-height: calc(90vh - 115px);
+    min-height: calc(83vh - 115px);
     /*setting the height like this is friendlier for resizing the browser.
     VH=View Height and targets the browser height
     you can do the same thing with VW=View Width and targets the browser width.
@@ -364,21 +366,23 @@ about
     justify-content: center;
     flex-direction: column;
 
+    position: relative;
+}
+#about .p-title {
     font-family: WorkSans;
-
-
-    padding: 30px 0 60px 0;
+    position: absolute;
+    top:30px;
 }
 
 .about-text {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .about-text p {
-    width: 40%;
+    width: 45%;
 }
 
 /*

@@ -6,7 +6,7 @@
         <p >(317) 359-9146</p>
     </div>
 
-    <a href="addproduct.php">Add Product</a>
+<!--    <a href="addproduct.php">Add Product</a>-->
 
     <div id="footer-icons">
         <a href="facebook.com" target="_blank"><img src="www/img/icons/facebook.svg" alt="Facebook Logo"></a>
