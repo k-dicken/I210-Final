@@ -21,9 +21,12 @@
 
         <!--clickable category links in the middle-->
         <nav class="nav-category-links">
-            <button id="bakeryButton" class="p-textLarge"  mouseenter="displayBakery()" id="bakeryButton" href="">Bakery <img src="www/img/icons/arrow-down.svg" alt=""></button>
-            <button id="beveragesButton" class="p-textLarge" onclick="displayBeverages()" id="beveragesButton">Beverages <img src="www/img/icons/arrow-down.svg" alt=""></button>
-            <button id="brunchButton" class="p-textLarge" onclick="displayBrunch()" id="brunchButton">Brunch <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <button id="beveragesButton" class="p-textLarge" onclick="displayBeverages()" id="beveragesButton">Beverages
+                <img src="www/img/icons/arrow-down.svg" alt=""></button>
+            <button id="brunchButton" class="p-textLarge" onclick="displayBrunch()" id="brunchButton">Brunch <img
+                        src="www/img/icons/arrow-down.svg" alt=""></button>
+            <button id="bakeryButton" class="p-textLarge" mouseenter="displayBakery()" id="bakeryButton" href="">Bakery
+                <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </nav>
 
         <!--clickable icons on the left-->
@@ -31,7 +34,7 @@
             <a href=""><img src="www/img/icons/search.svg" alt=""></a>
             <a href="addproduct.php"><img src="www/img/icons/plus.svg" alt=""></a>
             <a class="signin-button" style="color: white" href="userlogin.php">SIGN IN</a>
-            <a href=""><img src="www/img/icons/shopping-bag.svg" alt=""></a>
+            <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
         </nav>
 
     </div>
