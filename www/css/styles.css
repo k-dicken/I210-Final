@@ -28,15 +28,11 @@ p {
 REUSED CLASSES (FONTS, SECTIONS, CENTERING)
 */
 
-#full {
-    height: 80%;
-    width: 80%;
+.full {
+    width: 100%;
+    padding: 5% 10%;
 
     margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo {
@@ -53,8 +49,6 @@ REUSED CLASSES (FONTS, SECTIONS, CENTERING)
     font-weight: bold;
 
     text-decoration: none;
-
-
 }
 
 .p-subtitle {
@@ -69,7 +63,11 @@ REUSED CLASSES (FONTS, SECTIONS, CENTERING)
 
 .p-textSmall {
     font-family: WorkSans;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /*
@@ -743,6 +741,84 @@ LOGIN PAGE
     margin: 50px auto 0 auto;
 }
 
+/*
+SHOW CART
+*/
 
+.cart {
+    margin-top: 60px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.cart-item {
+    width: 90%;
+
+    border-radius: 100px;
+    background-color: #f2f3f2;
+
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-item .cart-img {
+    height: 180px;
+    width: 180px;
+
+    border-radius: 100px;
+
+    background-color: grey;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cart-item-info {
+    padding: 30px 40px;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-item-price {
+    margin-bottom: 40px;
+}
+
+.cart-item-quantity {
+    margin-bottom: 0;
+}
+
+.cart .line {
+    width: 60%;
+    height: 1px;
+
+    margin: 20px 0 80px 0;
+
+    background-color: black;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-around;
+
+    width: 40%;
+
+    margin-bottom: 40px;
+}
+
+.cart-order-button {
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    border-radius: 40px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #EE7B30;
+}
