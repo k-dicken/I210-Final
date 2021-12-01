@@ -1,5 +1,32 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
+$count = 0;
+
+//retrieve cart content
+if(isset($_SESSION['cart'])) {
+    $cart = $_SESSION['cart'];
+
+    if ($cart) {
+        $count = array_sum($cart);
+    }
+}
+
+//variables for a user’s login, name, and role
+$login = '';
+$name = '';
+$role = 0;
+
+//if the use has logged in, retrieve login, name, and role.
+if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
+    isset($_SESSION['role']))   {
+
+    $login = $_SESSION['login'];
+    $name = $_SESSION['name'];
+    $role = $_SESSION['role'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,6 +62,7 @@
             <a href="addproduct.php"><img src="www/img/icons/plus.svg" alt=""></a>
             <a class="signin-button" style="color: white" href="userlogin.php">SIGN IN</a>
             <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
+            <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
         </nav>
 
     </div>

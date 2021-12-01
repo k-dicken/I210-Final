@@ -222,6 +222,15 @@ header
     margin: 0 15px;
 }
 
+.circle {
+    width: 14px;
+    height: 14px;
+    margin-bottom: -14px;
+    margin-left: -35px;
+    border-radius: 10px;
+    background-color: #EE7B30;
+}
+
 /*
 footer
 */

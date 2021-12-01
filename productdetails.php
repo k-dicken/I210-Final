@@ -54,7 +54,7 @@ if (!$row = $query->fetch_assoc()) {
             <p class="description"><?php echo $row['description'] ?></p>
 
 
-            <button class="addToOrder-button">Add To Order</button>
+            <a class="addToOrder-button" href="addcart.php?id=<?php echo $row['product_id'] ?>">Add To Order</a>
         </div>
 
         <div class="line"></div>
