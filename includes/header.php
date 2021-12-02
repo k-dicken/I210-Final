@@ -27,6 +27,7 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
     $name = $_SESSION['name'];
     $role = $_SESSION['role'];
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,10 +60,23 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
         <!--clickable icons on the left-->
         <nav class="nav-icon-links">
             <a href=""><img src="www/img/icons/search.svg" alt=""></a>
-            <a href="addproduct.php"><img src="www/img/icons/plus.svg" alt=""></a>
-            <a class="signin-button" style="color: white" href="userlogin.php">SIGN IN</a>
-            <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
-            <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
+
+            <?php
+            if ($role == 1) {
+                echo "<a  href='addproduct.php'><img src='www/img/icons/plus.svg'</a>";
+            }
+            if (empty($login)) {
+                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
+            } else {
+                echo "<a class='profile-button' style='background-color: red;' href='userprofile.php'></a>";
+            }
+            ?>
+
+            <div class="bag-div">
+                <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
+                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
+            </div>
+
         </nav>
 
     </div>

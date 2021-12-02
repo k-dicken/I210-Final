@@ -225,8 +225,8 @@ header
 .circle {
     width: 14px;
     height: 14px;
-    margin-bottom: -14px;
-    margin-left: -35px;
+    margin-top: -10px;
+    margin-left: -10px;
     border-radius: 10px;
     background-color: #EE7B30;
 }
