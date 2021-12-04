@@ -36,11 +36,15 @@ if ($login_status == 2) {
     <p class="p-title">Sign in</p>
 
     <form action="userverifyaccount.php" method="post">
-        <label for="username">Username</label>
-        <input name="username" type="text" class="login-field" required>
+        <div class="input-wrapper">
+            <label for="username">Username</label>
+            <input name="username" type="text" class="login-field" required>
+        </div>
 
-        <label for="password">Password</label>
-        <input name="password" type="password" class="login-field" required>
+        <div class="input-wrapper">
+            <label for="password">Password</label>
+            <input name="password" type="password" class="login-field" required>
+        </div>
 
         <input type="submit" name="Submit" id="submit" value="Login"/>
     </form>
