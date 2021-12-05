@@ -48,7 +48,7 @@ if(isset($_SESSION['cart'])) {
         //fetch books and display them in a table
         while ($row = $query->fetch_assoc()) {
 
-            $id = $row['id'];
+            $id = $row['product_id'];
             $name = $row['name'];
             $price = $row['price'];
             $image = $row['image'];

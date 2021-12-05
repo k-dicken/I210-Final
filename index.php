@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Oishii - Home";
+$page_title = "Oishii - Home";
 
 require_once('includes/header.php');
 
