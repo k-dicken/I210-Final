@@ -480,16 +480,16 @@ Products List Page
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%;
+    border-radius: 100%;
 
-    margin-top: -64px;
+    /*margin-top: -64px;*/
 
     background-color: #EE7B30;
 }
 
 .addCartButton:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: #ff650f;
 }
 
 .addCartButton img {
@@ -606,7 +606,7 @@ INDIVIDUAL PRODUCT PAGES
 }
 
 #product-details-info .addToOrder-button:hover {
-    background-color: grey;
+    background-color: #ff650f;
 }
 
 #product-details-info .line {
@@ -697,7 +697,7 @@ ADD PRODUCT
 }
 
 .product-form .submit-button:hover {
-    background-color: grey;
+    background-color: #ff650f;
 
 }
 
@@ -751,11 +751,110 @@ LOGIN PAGE
 }
 
 #login form #submit {
-    width: 100px;
+    width: 120px;
 
     font-size: 18px;
     margin: 0 auto;
     /*margin: 50px auto 0 auto;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+
+    height: 40px;
+
+    /*margin: 0 7%;*/
+
+    background-color: #EE7B30;
+    color: #ffffff;
+}
+#login form #submit:hover {
+    background-color: #ff650f;
+}
+
+/*
+Signup PAGE
+*/
+
+#signup {
+    min-height: calc(90vh - 115px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 80%;
+
+    padding: 30px 0 15px 0;
+    margin: 0 auto;
+}
+
+#signup form {
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    width: 40%;
+
+    /*margin: 80px 0 80px 0;*/
+}
+
+#signup form .name-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#signup form .name-wrapper .input-wrapper {
+    width: 49%;
+}
+
+#signup form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup form .input-wrapper input {
+    font-family: WorkSans;
+    min-height: 20px;
+
+    padding: 5px;
+
+    /*margin-bottom: 40px;*/
+}
+
+#signup form .input-wrapper label {
+    font-family: WorkSans;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+#signup form #submit {
+    width: 120px;
+
+    font-size: 18px;
+    margin: 0 auto;
+    /*margin: 50px auto 0 auto;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+
+    height: 40px;
+
+    /*margin: 0 7%;*/
+
+    background-color: #EE7B30;
+    color: #ffffff;
+}
+#signup form #submit:hover {
+    background-color: #ff650f;
 }
 
 /*
