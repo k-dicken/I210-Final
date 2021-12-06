@@ -66,7 +66,6 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
         <nav class="nav-icon-links">
             <a href="searchproducts.php"><img src="www/img/icons/search.svg" alt=""></a>
 
-
             <?php
             if ($role == 1) {
                 echo "<a  href='addproduct.php'><img src='www/img/icons/plus.svg'</a>";
@@ -74,20 +73,17 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             if (empty($login))
                 echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
             else {
-                echo "<a href='logout.php'>Logout</a>";
-                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
+//                echo "<a href='logout.php'>Logout</a>";
+//                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
+                echo "<div class='bag-div'>help</div>";
             }
             ?>
 
-
             </a>
-            <a href="#"><img src="www/img/icons/<?= $shoppingcart_img ?>" alt= ""
-                             style='width: 50px; border: none'><br>
-
-                <?php echo $count ?> item(s)
-
-
-            </a>
+            <div class="bag-div">
+                <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
+                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
+            </div>
 
         </nav>
 
