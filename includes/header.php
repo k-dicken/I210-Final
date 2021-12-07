@@ -79,7 +79,7 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             if (empty($login)) {
                 echo "<a class='signin-button' style='color:white' href='userlogin.php'>LOGIN</a>";
             } else {
-                echo "<a class='profileButton' href='userprofile.php'><img src='www/img/icons/profile_icon.svg' alt='profile'></a>";
+                echo "<a class='profileButton' href='userprofile.php'><img src='www/img/icons/profile_hollow_icon.svg' alt='profile'></a>";
                 echo "<a class='signin-button' style='color:white ' href='logout.php'>Logout</a>";
 //                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
 
