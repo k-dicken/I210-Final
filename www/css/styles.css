@@ -28,9 +28,11 @@ p {
 REUSED CLASSES (FONTS, SECTIONS, CENTERING)
 */
 
-#full {
+.full {
     width: 100%;
     padding: 5% 10%;
+
+    min-height: calc(100vh - 115px);
 
     margin: 0 auto;
 }
@@ -202,7 +204,7 @@ header
 
     height: 36px;
 
-    margin: 0;
+    margin-left: 20px;
 
     background-color: #49784f;
 }
@@ -508,7 +510,7 @@ Products List Page
 
 .addCartButton:hover {
     cursor: pointer;
-    background-color: #ff650f;
+    background-color: grey;
 }
 
 .addCartButton img {
@@ -716,7 +718,7 @@ ADD PRODUCT
 }
 
 .product-form .submit-button:hover {
-    background-color: #ff650f;
+    background-color: grey;
 
 }
 
@@ -725,7 +727,6 @@ LOGIN PAGE
 */
 
 #login {
-    min-height: calc(90vh - 115px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -791,7 +792,7 @@ LOGIN PAGE
     color: #ffffff;
 }
 #login form #submit:hover {
-    background-color: #ff650f;
+    background-color: grey;
 }
 
 /*
@@ -799,7 +800,6 @@ Signup PAGE
 */
 
 #signup {
-    min-height: calc(90vh - 115px);
     display: flex;
     align-items: center;
     justify-content: space-between;

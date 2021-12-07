@@ -83,7 +83,7 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             </a>
             <div class="bag-div">
                 <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
-<!--                --><?php //if ($count != 0) {echo "<div class='circle'></div>";} ?>
+                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
             </div>
 
         </nav>
