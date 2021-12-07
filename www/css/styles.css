@@ -165,7 +165,7 @@ header
     font-weight: bold;
     font-size: 16px;
 
-    width: 50%;
+    width: 40%;
 }
 
 .nav-category-links button {
@@ -181,11 +181,12 @@ header
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 20%;
+    width: 25%;
 }
 
-.nav-icon-links * {
+.nav-icon-links a {
     margin-left: 20px;
+    /*background-color: #5f69af;*/
 }
 
 .nav-icon-links .bag-div a {
@@ -196,7 +197,7 @@ header
     height: 32px;
     width: 32px;
 
-    margin: 0;
+    /*margin: 0;*/
 }
 
 
@@ -210,7 +211,7 @@ header
 
     height: 36px;
 
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 
     background-color: #49784f;
 }
@@ -230,7 +231,7 @@ header
     justify-content: center;
     position: absolute;
 
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: -20px;
 
     /*padding: 10px 20px;*/
@@ -244,16 +245,16 @@ header
 }
 
 .profileButton {
-    width: 34px;
-    height: 34px;
+    /*width: 50px;*/
+    /*height: 50px;*/
 
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 
-    background-color: grey;
-    background-image: url(../img/images/profile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-color: grey;*/
+    /*background-image: url(../img/images/profile.png);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 
 #side-header {
@@ -412,7 +413,7 @@ about
 */
 
 #about {
-    min-height: calc(83vh - 115px);
+    min-height: calc(68vh - 115px);
     /*setting the height like this is friendlier for resizing the browser.
     VH=View Height and targets the browser height
     you can do the same thing with VW=View Width and targets the browser width.
@@ -425,12 +426,13 @@ about
     justify-content: center;
     flex-direction: column;
 
-    position: relative;
+    /*position: relative;*/
 }
 #about .p-title {
     font-family: WorkSans;
-    position: absolute;
-    top:30px;
+    /*position: absolute;*/
+    /*top:30px;*/
+    /*background-color: #5D6F30;*/
 }
 
 .about-text {
@@ -843,12 +845,13 @@ Signup PAGE
 }
 
 #signup form {
-    height: 450px;
+    /*height: 450px;*/
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 
     width: 40%;
+    margin: 30px 0;
 
     /*margin: 80px 0 80px 0;*/
 }
@@ -860,10 +863,21 @@ Signup PAGE
 #signup form .name-wrapper .input-wrapper {
     width: 49%;
 }
+#signup form .cityState-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#signup form .cityState-wrapper .city {
+    width: 74%;
+}
+#signup form .cityState-wrapper .state {
+    width: 24%;
+}
 
 #signup form .input-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
 }
 
 #signup form .input-wrapper input {
