@@ -10,7 +10,7 @@ if (!isset($_SESSION['login'])) {
 
 
 //empty the shopping cart
-$_SESSION['cart'] = '';
+$_SESSION['cart'] = [];
 
 //set page title
 $page_title = "Oishii";
