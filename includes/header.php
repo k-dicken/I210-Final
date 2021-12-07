@@ -76,11 +76,13 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             if ($role == 1) {
                 echo "<a  href='addproduct.php'><img src='www/img/icons/plus.svg'</a>";
             }
-            if (empty($login)){
-                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
-            }else {
-                echo "<a class='signin-button' style='color:white' href='logout.php'>Logout</a>";
+            if (empty($login)) {
+                echo "<a class='signin-button' style='color:white' href='userlogin.php'>LOGIN</a>";
+            } else {
+//                echo "<a href='logout.php'>Logout</a>";
 //                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
+                echo "<a class='profileButton' href='userprofile.php'></a>";
+//                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
             }
             ?>
 
