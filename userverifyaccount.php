@@ -29,7 +29,7 @@ if  ($query ->num_rows){
     $row = $query ->fetch_assoc();
     $_SESSION['login'] = $username;
     $_SESSION['role'] = $row['role'];
-    $_SESSION['name'] = $row['first_name'] . " " . $row['last_name'];
+    $_SESSION['name'] = $row['first_name'];
     $_SESSION['login_status'] = 1;
 }
 
@@ -38,5 +38,5 @@ if  ($query ->num_rows){
 $conn->close();
 
 //redirect to the userprofile.php page
-header("Location: userprofile.php");
+header("Location: index.php");
 

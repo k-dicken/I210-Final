@@ -57,7 +57,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 //create session variables
 $_SESSION['login'] = $username;
-$_SESSION['name'] = "$firstname $lastname";
+$_SESSION['name'] = "$firstname";
 $_SESSION['role'] = 2;
 
 //set login status to 3 since this is a new user.
@@ -65,4 +65,4 @@ $_SESSION['role'] = 2;
 $_SESSION['login_status'] = 3;
 
 //redirect the user to the userprofile.php page
-header("Location: userprofile.php");
+header("Location: index.php");

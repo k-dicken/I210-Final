@@ -14,7 +14,7 @@ if(isset($_SESSION['cart'])) {
 }
 
 //set shopping cart image
-$shoppingcart_img = (!$count) ? "shoppingbag_empty.svg" : "shoppingbag_full.jpg";
+//$shoppingcart_img = (!$count) ? "shoppingbag_empty.svg" : "shoppingbag_full.jpg";
 
 
 //variables for a user’s login, name, and role
@@ -46,24 +46,30 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
 <div id="header">
 
     <!--the top part of the header-->
-    <div id="main-header">
+    <nav id="main-header">
         <!--logo-->
         <div id="header-logo" class="logo"><a class="p-title" href="index.php">Oishii</a>
+            <?php
+            if ($role != null) {
+                echo "<span class='greeting' style='color:#EE7B30; font-size: 16px;'>Konichiwa, $name!</style>";
+            }else {
+            }
+            ?>
 
         </div>
 
         <!--clickable category links in the middle-->
-        <nav class="nav-category-links">
+        <div class="nav-category-links">
             <button id="beveragesButton" class="p-textLarge" onclick="displayBeverages()" id="beveragesButton">Beverages
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
             <button id="brunchButton" class="p-textLarge" onclick="displayBrunch()" id="brunchButton">Brunch <img
                         src="www/img/icons/arrow-down.svg" alt=""></button>
             <button id="bakeryButton" class="p-textLarge" mouseenter="displayBakery()" id="bakeryButton" href="">Bakery
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
-        </nav>
+        </div>
 
         <!--clickable icons on the left-->
-        <nav class="nav-icon-links">
+        <div class="nav-icon-links">
             <a href="searchproducts.php"><img src="www/img/icons/search.svg" alt=""></a>
 
 
@@ -71,27 +77,37 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             if ($role == 1) {
                 echo "<a  href='addproduct.php'><img src='www/img/icons/plus.svg'</a>";
             }
-            if (empty($login))
+            if (empty($login)){
                 echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
-            else {
-                echo "<a href='logout.php'>Logout</a>";
-                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
+            }else {
+                echo "<a class='signin-button' style='color:white' href='logout.php'>Logout</a>";
+//                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
             }
             ?>
 
 
             </a>
-            <a href="#"><img src="www/img/icons/<?= $shoppingcart_img ?>" alt= ""
-                             style='width: 50px; border: none'><br>
+            <a href="#"><img class="cart-img" src="www/img/icons/shoppingbag_empty.svg" alt= "" style=''>
 
-                <?php echo $count ?> item(s)
+
+
+
+                <?php
+                if ($count == 0) {
+
+                } else{
+                    echo "<div class='item-circle' style='color:white' href='#'>$count</div>";
+
+                }
+
+//                echo $count ?><!-- item(s)-->
 
 
             </a>
 
-        </nav>
+        </div>
 
-    </div>
+    </nav>
 
     <!--the bottom part of the header-->
     <div id="side-header">
