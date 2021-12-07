@@ -33,5 +33,7 @@ if (array_key_exists($id, $cart)) {
 //update the session variable
 $_SESSION['cart'] = $cart;
 
+//echo $cart[$id];
+
 //redirect to the showcart.php page.
 header('Location: showcart.php');

@@ -37,18 +37,21 @@ if(isset($_SESSION['cart'])) {
         //select sql statement
         $sql = "SELECT * FROM products WHERE 0";
 //
-        foreach(array_keys($cart) as $product_id) {
-            $sql .= " OR product_id=$product_id";
+        foreach(array_keys($cart) as $id) {
+            $sql .= " OR product_id=$id";
+//            echo $cart, $id, " ";
         }
 
         $query = $conn->query($sql);
 
         $cart_total = null;
 
+
+
         //fetch books and display them in a table
         while ($row = $query->fetch_assoc()) {
 
-            $id = $row['product_id'];
+            $product_id = $row['product_id'];
             $name = $row['name'];
             $price = $row['price'];
             $image = $row['image'];
@@ -63,7 +66,11 @@ if(isset($_SESSION['cart'])) {
             "<p class='p-textLarge cart-item-quantity'>QTY $qty</p>",
             "</div>",
             "</div>";
+
+//            echo $cart[$product_id], ' ', $product_id;
         }
+
+
 
         ?>
 <!--        <div class="cart-item">-->
