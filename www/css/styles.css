@@ -28,7 +28,7 @@ p {
 REUSED CLASSES (FONTS, SECTIONS, CENTERING)
 */
 
-.full {
+#full {
     width: 100%;
     padding: 5% 10%;
 
@@ -173,15 +173,23 @@ header
 .nav-icon-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-end;
     width: 20%;
 }
 
+.nav-icon-links * {
+    margin-left: 20px;
+}
+
+.nav-icon-links .bag-div a {
+    margin: 0;
+}
 
 .nav-icon-links img {
     height: 32px;
     width: 32px;
+
+    margin: 0;
 }
 
 .signin-button {
@@ -194,12 +202,25 @@ header
 
     height: 36px;
 
-    /*margin: 0 7%;*/
+    margin: 0;
 
     background-color: #49784f;
 }
 .signin-button:hover {
     background-color: #EE7B30;
+}
+
+.profileButton {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background-color: grey;
+    background-image: url(../img/images/profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #side-header {
@@ -317,14 +338,12 @@ hero
             to bottom,
             rgba(90, 70, 70, 0.7),
             rgba(90, 70, 70, 0.7)
-            /*rgba(118, 86, 86, 0.5),*/
-            /*rgba(90, 60, 60, 0.7)*/
     ),
     url(../img/images/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 #hero p {
@@ -482,7 +501,7 @@ Products List Page
 
     border-radius: 100%;
 
-    /*margin-top: -64px;*/
+    margin-top: -64px;
 
     background-color: #EE7B30;
 }

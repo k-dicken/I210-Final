@@ -18,8 +18,9 @@ function displayBakery() {
         "<a href=\"listproducts.php?category=7\">Sweets</a>" +
         "<a href=\"listproducts.php?category=8\">Breads</a>";
 }
-function mouseExit(){
+
+function removeMenu(){
     displayStrip.innerHTML =
         "<div id='side-header-display'>Our new holiday drinks are here just in time for the winter season!</div>";
-
 }
+

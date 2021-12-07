@@ -58,7 +58,7 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
             <button id="brunchButton" class="p-textLarge" onclick="displayBrunch()" id="brunchButton">Brunch <img
                         src="www/img/icons/arrow-down.svg" alt=""></button>
-            <button id="bakeryButton" class="p-textLarge" mouseenter="displayBakery()" id="bakeryButton" href="">Bakery
+            <button id="bakeryButton" class="p-textLarge" onclick="displayBakery()" id="bakeryButton" href="">Bakery
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </nav>
 
@@ -70,19 +70,20 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
             if ($role == 1) {
                 echo "<a  href='addproduct.php'><img src='www/img/icons/plus.svg'</a>";
             }
-            if (empty($login))
-                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
-            else {
+            if (empty($login)) {
+                echo "<a class='signin-button' style='color:white' href='userlogin.php'>LOGIN</a>";
+            } else {
 //                echo "<a href='logout.php'>Logout</a>";
 //                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
-                echo "<div class='bag-div'>help</div>";
+                echo "<a class='profileButton' href='userprofile.php'></a>";
+//                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
             }
             ?>
 
             </a>
             <div class="bag-div">
                 <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
-                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
+<!--                --><?php //if ($count != 0) {echo "<div class='circle'></div>";} ?>
             </div>
 
         </nav>
