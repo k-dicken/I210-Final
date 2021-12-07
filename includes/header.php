@@ -88,7 +88,7 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
 
 
             </a>
-            <a href="#"><img class="cart-img" src="www/img/icons/shoppingbag_empty.svg" alt= "" style=''>
+            <a href="showcart.php"><img class="cart-img" src="www/img/icons/shoppingbag_empty.svg" alt= "">
 
 
 
