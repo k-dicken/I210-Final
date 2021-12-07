@@ -36,7 +36,7 @@ if ($login_status == 2) {
 
 ?>
     <!-- working login page design-->
-        <div id="login">
+        <div id="login" class="full">
             <p class="p-title">Sign in</p>
 
             <form action="userverifyaccount.php" method="post">

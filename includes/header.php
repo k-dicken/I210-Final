@@ -64,14 +64,13 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
             <button id="brunchButton" class="p-textLarge" onclick="displayBrunch()" id="brunchButton">Brunch <img
                         src="www/img/icons/arrow-down.svg" alt=""></button>
-            <button id="bakeryButton" class="p-textLarge" mouseenter="displayBakery()" id="bakeryButton" href="">Bakery
+            <button id="bakeryButton" class="p-textLarge" onclick="displayBakery()" id="bakeryButton" href="">Bakery
                 <img src="www/img/icons/arrow-down.svg" alt=""></button>
         </div>
 
         <!--clickable icons on the left-->
         <div class="nav-icon-links">
             <a href="searchproducts.php"><img src="www/img/icons/search.svg" alt=""></a>
-
 
             <?php
             if ($role == 1) {
@@ -104,6 +103,10 @@ if (isset($_SESSION['login']) AND isset($_SESSION['name']) AND
 
 
             </a>
+            <!-- <div class="bag-div">
+                <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
+                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
+            </div> -->
 
         </div>
 

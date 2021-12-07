@@ -46,7 +46,7 @@ if (!$query) {
         while (($row = $query->fetch_assoc()) !== null) {
             echo "<div id=\"product\">";
             echo "<a class=\"product-image\" href=\"productdetails.php?id=", $row['product_id'], "\" style=\"background-image: url('www/img/images/", $row['image'], "')\"></a>";
-            echo "<span><div class=\"addCartButton\"><img src=\"www/img/icons/shopping-bag.svg\" alt=\"\"></div></span>";
+            echo "<span><a href='addcart.php?id=", $row['product_id'], "' class='addCartButton'><img src='www/img/icons/shopping-bag.svg' alt='Shopping Bag Icon'></a></span>";
             echo "<a href=\"productdetails.php?id=", $row['product_id'], "\" class=\"title\">", $row['name'],"</a>";
             echo "<a href='productdetails.php?id=", $row['product_id'], "' class='price'>$", $row['price'], "</a>";
             echo "</div>";

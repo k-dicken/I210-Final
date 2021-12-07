@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 if (!isset($_SESSION['login'])) {
-    header("Location: userprofile.php");
+    header("Location: userlogin.php");
     exit();
 }
 
@@ -18,11 +18,9 @@ $page_title = "Oishii";
 require_once ('includes/header.php');
 ?>
 
-    <h2>Checkout</h2>
+    <h2>Order Confirmed</h2>
 
-    <p>Thank you for shopping with us. Your business is greatly appreciated. You will be
-        notified once your items are shipped.
-    </p>
+    <p>Thank you for shopping with us. Your business is greatly appreciated. You will be notified once your items are ready for pick-up.</p>
 
 <?php
 include ("includes/footer.php");
