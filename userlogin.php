@@ -40,6 +40,12 @@ if ($login_status == 2) {
             <p class="p-title">Sign in</p>
 
             <form action="userverifyaccount.php" method="post">
+                <?php
+                if ($login_status == 2) {
+                    echo "<p style='margin: 0 auto 30px auto; color:#EE7B30;' class='p-textLarge'>Login failed. Please try again.</p>";
+                }
+                ?>
+
                 <div class="input-wrapper">
                     <label for="username">Username</label>
                     <input name="username" type="text" class="login-field" required>
@@ -48,6 +54,7 @@ if ($login_status == 2) {
                     <label for="password">Password</label>
                     <input type='password' name='password' class="login-field" required>
                 </div>
+
                 <input id="submit" type="submit" name="Submit"  value="Login"/>
             </form>
             <p class="p-textLarge">Don't have an account? <a href="usercreateaccount.php">Create One!</a></p>

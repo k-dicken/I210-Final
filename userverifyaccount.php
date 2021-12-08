@@ -39,5 +39,9 @@ if  ($query ->num_rows){
 $conn->close();
 
 //redirect to the userprofile.php page
-header("Location: index.php");
+if ($_SESSION['login_status'] != 2) {
+    header("Location: userprofile.php");
+} else {
+    header("Location: userlogin.php");
+}
 

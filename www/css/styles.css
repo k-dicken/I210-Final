@@ -772,7 +772,7 @@ LOGIN PAGE
 }
 
 #login form {
-    height: 275px;
+    /*height: 275px;*/
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -785,6 +785,8 @@ LOGIN PAGE
 #login form .input-wrapper {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 40px;
 }
 
 #login form .input-wrapper input {
@@ -807,7 +809,7 @@ LOGIN PAGE
     width: 120px;
 
     font-size: 18px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     /*margin: 50px auto 0 auto;*/
     display: flex;
     align-items: center;
@@ -1002,3 +1004,40 @@ SHOW CART
     color: white;
     background-color: #EE7B30;
 }
+
+/*USER PROFILE*/
+#profile-content {
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
+
+    /*background-color: grey;*/
+}
+
+.profile-image-wrapper {
+    width: 35%;
+    /*padding: 10px;*/
+    /*background: white;*/
+    /*box-sizing: border-box;*/
+    /*resize: horizontal;*/
+    overflow: auto;
+    max-width: 100%;
+    /*height: ;*/
+}
+
+#profile-content .profile-image {
+    height: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: black;
+}
+
+.profile-content-info {
+    width: 50%;
+
+    padding: 20px 0;
+}
+
+
+
