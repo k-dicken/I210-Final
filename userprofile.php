@@ -5,17 +5,18 @@ require_once('includes/header.php');
 require_once('includes/database.php');
 
 //if user id cannot retrieved, terminate the script
-if (!filter_has_var(INPUT_GET, "id")) {
-    echo "Error: User ID was not found";
-    require_once('includes/footer.php');
-    exit();
-
-}
+//if (is_null($userID)) {
+//    echo "Error: User ID was not found";
+//    require_once('includes/footer.php');
+//    exit();
+//
+//}
 //retrieve user id from a query string variable.
-$user_id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+//$user_id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+//$userID =
 
 //MySQL SELECT statement
-$sql = "SELECT * FROM users WHERE user_id=$user_id";
+$sql = "SELECT * FROM users WHERE user_id = $userID";
 
 //execute the query
 $query = $conn->query($sql);
