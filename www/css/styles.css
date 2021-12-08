@@ -844,7 +844,7 @@ Signup PAGE
     margin: 0 auto;
 }
 
-#signup form {
+.accInfo form {
     /*height: 450px;*/
     display: flex;
     justify-content: space-evenly;
@@ -856,31 +856,31 @@ Signup PAGE
     /*margin: 80px 0 80px 0;*/
 }
 
-#signup form .name-wrapper {
+.accInfo form .name-wrapper {
     display: flex;
     justify-content: space-between;
 }
-#signup form .name-wrapper .input-wrapper {
+.accInfo form .name-wrapper .input-wrapper {
     width: 49%;
 }
-#signup form .cityState-wrapper {
+.accInfo form .cityState-wrapper {
     display: flex;
     justify-content: space-between;
 }
-#signup form .cityState-wrapper .city {
+.accInfo form .cityState-wrapper .city {
     width: 74%;
 }
-#signup form .cityState-wrapper .state {
+.accInfo form .cityState-wrapper .state {
     width: 24%;
 }
 
-#signup form .input-wrapper {
+.accInfo form .input-wrapper {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
 }
 
-#signup form .input-wrapper input {
+.accInfo form .input-wrapper input {
     font-family: WorkSans;
     min-height: 20px;
 
@@ -889,7 +889,7 @@ Signup PAGE
     /*margin-bottom: 40px;*/
 }
 
-#signup form .input-wrapper label {
+.accInfo form .input-wrapper label {
     font-family: WorkSans;
     font-weight: bold;
 

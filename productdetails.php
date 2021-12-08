@@ -1,10 +1,7 @@
 <?php
-/** Author: your name
- *  Date: today's date
- *  Description:
- */
 $page_title = "Product Details";
-require_once ('includes/header.php');
+
+require_once('includes/header.php');
 require_once('includes/database.php');
 
 //if product id cannot retrieved, terminate the script

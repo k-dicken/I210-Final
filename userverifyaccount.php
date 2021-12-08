@@ -30,6 +30,7 @@ if  ($query ->num_rows){
     $_SESSION['login'] = $username;
     $_SESSION['role'] = $row['role'];
     $_SESSION['name'] = $row['first_name'];
+    $_SESSION['userID'] = $row['user_id'];
     $_SESSION['login_status'] = 1;
 }
 
