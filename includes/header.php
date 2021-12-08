@@ -83,7 +83,6 @@ if (isset($_SESSION['login'])
                 echo "<a class='signin-button' style='color:white' href='userlogin.php'>LOGIN</a>";
             } else {
                 echo "<a class='profileButton' href='userprofile.php'><img src='www/img/icons/profile_hollow_icon.svg' alt='profile'></a>";
-                echo "<a class='signin-button' style='color:white ' href='logout.php'>Logout</a>";
 //                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
 
 //                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
