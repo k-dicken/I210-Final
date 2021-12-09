@@ -61,33 +61,40 @@ if (!$query) {
 //        ?>
 <!--    </table>-->
     <div id="search-results" class="full">
+
+
 <?php
-    echo "<h2 class='p-title'>Showing \"$terms_str\"</h2>";
-    echo "<a class='search-link p-textLarge' href='searchproducts.php'>Back to search</a><br><br><br>";
 
-    //display results in a table
     if ($query->num_rows == 0) {
-        echo "<p class='p-title'>Your search \"$terms_str\" did not match any products in our inventory</p>";
-
+        echo "<p class='p-title'>Your search \"$terms_str\" did not match any products in our inventory.</p>";
+        echo "<a class='search-link p-subtitle' href='searchproducts.php'>Back to search</a>";
+        echo "</div>";
         include ('includes/footer.php');
         exit;
     }
 
+    //search heading
+    echo "<h2 class='p-title'>Showing \"$terms_str\"</h2>";
+    echo "<a class='search-link p-textLarge' href='searchproducts.php'>Back to search</a><br><br><br>";
+
+    //display results
     while ($row = $query->fetch_assoc()) {
         $product_id = $row['product_id'];
         $name = $row['name'];
         $price = $row['price'];
         $image = $row['image'];
-        echo "<div class='cart-item'>",
+        echo "<a style='color: black; text-decoration: none' href='productdetails.php?id=$product_id' class='cart-item'>",
         "<div style='background-image: url(\"www/img/images/", $image, "\")' class='cart-img'></div>",
         "<div class='cart-item-info'>",
         "<p class='p-subtitle cart-item-name'>$name</p>",
         "<p class='p-textLarge cart-item-price'>$$price</p>",
         "</div>",
-        "</div>";
+        "</a>";
+
     }
 ?>
     </div>
+    <br>
 
 <?php
 // clean up resultsets when we're done with them!

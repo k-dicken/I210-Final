@@ -7,7 +7,7 @@
  *
  */
 
-$page_title = "PHP Online Bookstore Error";
+$page_title = "Oishii - Error";
 require_once 'includes/header.php';
 
 $error='Default error.';
@@ -15,10 +15,11 @@ if(isset($_GET['m'])) {
     $error = trim($_GET['m']);
 }
 ?>
-    <br>
-<h3>An error has occurred.</h3>
-    <?= $error ?>
-    <br>
+    <div class="full page-display">
+        <h2 class="p-title">An error has occurred.</h2>
+        <p class="p-textLarge"><?= $error ?></p>
+    </div>
+
 
 <?php
 require_once 'includes/footer.php';
