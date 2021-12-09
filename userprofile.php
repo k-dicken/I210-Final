@@ -43,13 +43,13 @@ require_once('includes/header.php');
     <p class="p-title">Your Profile</p>
 
     <div id="profile-content">
-        <div class="profile-image-wrapper">
-            <div class="profile-image"></div>
-        </div>
+<!--        <div class="profile-image-wrapper">-->
+<!--            <div class="profile-image"></div>-->
+<!--        </div>-->
         <div class="profile-content-info">
             <p class="profile-user-fullname p-title"><?= $name ?></p>
             <p class="profile-user-username p-subtitle">@<?= $login ?></p>
-            <a class="profile-user-logout p-textLarge" href='logout.php'>Log out</a>
+            <a class="profile-user-logout button p-textLarge" href='logout.php'>LOGOUT</a>
         </div>
 <!--        <div class="accInfo">-->
 <!--            <form action="register.php" method="post">-->

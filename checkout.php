@@ -18,9 +18,12 @@ $page_title = "Oishii";
 require_once ('includes/header.php');
 ?>
 
-    <h2>Order Confirmed</h2>
+    <div class="full page-display">
+        <h2 class="p-title">Order Confirmed</h2>
+        <br>
+        <p class="p-textLarge">Thank you for shopping with us. Your business is greatly appreciated. <br> You will be notified once your items are ready for pick-up.</p>
+    </div>
 
-    <p>Thank you for shopping with us. Your business is greatly appreciated. You will be notified once your items are ready for pick-up.</p>
 
 <?php
 include ("includes/footer.php");

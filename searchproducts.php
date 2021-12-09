@@ -9,11 +9,13 @@ $page_title = "Search product";
 
 include ('includes/header.php');
 ?>
-    <h2>Search Products by Names</h2>
-    <p>Enter one or more words in product's name.</p>
-    <form action="searchproductresults.php" method="get">
-        <input type="text" name="terms" size="40" required />&nbsp;&nbsp;
-        <input type="submit" name="Submit" id="Submit" value="Search Product" />
-    </form>
+    <div class="search-page full page-display">
+        <h2 class="p-title">Search our Products</h2>
+        <p class="p-textLarge">Enter one or more keywords.</p>
+        <form action="searchproductresults.php" method="get">
+            <input style="margin-top: 40px; padding: 10px" class="p-textSmall" placeholder="Search..." type="text" name="terms" size="40" required />&nbsp<br>
+            <input style="margin-top: 20px" class="p-textSmall button" type="submit" name="Submit" id="Submit" value="Search Product" />
+        </form>
+    </div>
 <?php
 include ('includes/footer.php');

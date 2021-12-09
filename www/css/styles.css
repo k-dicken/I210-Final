@@ -37,6 +37,26 @@ REUSED CLASSES (FONTS, SECTIONS, CENTERING)
     margin: 0 auto;
 }
 
+.page-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+
+    text-decoration: none;
+    color: white;
+    background-color: #EE7B30;
+}
+
 .logo {
     font-family: WorkSans;
     font-weight: bold;
@@ -85,6 +105,10 @@ fonts
     font-family: WorkSans;
     src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
+
+/*
+Simple Display Page
+*/
 
 /*
 header
@@ -937,6 +961,7 @@ SHOW CART
 
 .cart-item {
     width: 90%;
+    margin: 0 auto;
 
     border-radius: 100px;
     background-color: #f2f3f2;
@@ -1034,10 +1059,33 @@ SHOW CART
 }
 
 .profile-content-info {
-    width: 50%;
+    margin: 0 auto;
 
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
 }
 
+.profile-user-fullname {
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
+.profile-user-username {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.profile-user-logout {
+    margin: 0 auto;
+}
+
+/* Search */
+.search-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #EE7B30;
+}
 

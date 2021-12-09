@@ -23,9 +23,10 @@ $page_title = "Oishii Logout";
 include ('includes/header.php');
 
 ?>
-
-    <h2>Logout</h2>
-    <p>Thank you for your visit. You are now logged out.</p>
+    <div class="full page-display">
+        <h2 class="p-title">You have been logged out.</h2>
+        <p class="p-textLarge">Thank you for visiting Oishii. See you next time!</p>
+    </div>
 
 <?php
 include ('includes/footer.php');
