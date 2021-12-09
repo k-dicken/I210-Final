@@ -13,6 +13,8 @@ if(isset($_SESSION['cart'])) {
         $count = array_sum($cart);
     }
 }
+
+echo "/";
 ?>
 
 <div id="showcart" class="full">
@@ -59,7 +61,7 @@ if(isset($_SESSION['cart'])) {
             $total = $qty * $price;
             $cart_total = $cart_total + $total;
             echo "<div class='cart-item'>",
-            "<span style='background-image: url('www/img/images/", $image, "') class='cart-img'></span>",
+            "<div style='background-image: url(\"www/img/images/", $image, "\")' class='cart-img'></div>",
             "<div class='cart-item-info'>",
             "<p class='p-subtitle cart-item-name'>$name</p>",
             "<p class='p-textLarge cart-item-price'>$$total</p>",
