@@ -60,14 +60,14 @@ echo "/";
             $qty = $cart[$product_id];
             $total = $qty * $price;
             $cart_total = $cart_total + $total;
-            echo "<div class='cart-item'>",
+            echo "<a href='productdetails.php?id=$product_id' class='cart-item'>",
             "<div style='background-image: url(\"www/img/images/", $image, "\")' class='cart-img'></div>",
             "<div class='cart-item-info'>",
             "<p class='p-subtitle cart-item-name'>$name</p>",
             "<p class='p-textLarge cart-item-price'>$$total</p>",
             "<p class='p-textLarge cart-item-quantity'>QTY $qty</p>",
             "</div>",
-            "</div>";
+            "</a>";
 
 //            echo $cart[$product_id], ' ', $product_id;
         }
