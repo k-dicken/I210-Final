@@ -87,8 +87,7 @@ if (isset($_SESSION['login'])
             } else {
                 echo "<a class='profileButton' href='userprofile.php'><img src='www/img/icons/profile_hollow_icon.svg' alt='profile'></a>";
                 echo "<a class='signin-button' style='color:white ' href='logout.php'>Logout</a>";
-//                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
-//                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
+
             }
             ?>
 
@@ -97,20 +96,13 @@ if (isset($_SESSION['login'])
             <a href="showcart.php"><img class="cart-img" style='height: 32px; width: 32px;' src="www/img/icons/shoppingbag_empty.svg" alt="view cart">
 
                 <?php
-                if ($count == 0) {
-
-                } else{
-                    echo "<div class='item-circle' style='color:white' href='#'>$count</div>";
-
+                if ($count != 0) {
+                    echo "<div class='item-circle' style='color:white'>$count</div>";
                 }
                 ?>
 
 
             </a>
-            <!-- <div class="bag-div">
-                <a href="showcart.php"><img src="www/img/icons/shopping-bag.svg" alt=""></a>
-                <?php if ($count != 0) {echo "<div class='circle'></div>";} ?>
-            </div> -->
 
         </div>
 

@@ -1110,7 +1110,7 @@ SHOW CART
 
     display: flex;
     align-items: center;
-    justify-content: space-betweent;
+    justify-content: space-between;
     flex-direction: column;
 
     /*background-color: #5D6F30;*/
@@ -1133,6 +1133,7 @@ SHOW CART
     margin: 15px 0;
 }
 #profile-content .panel .controls{
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1179,12 +1180,15 @@ SHOW CART
 #profile-content form #submit:hover {
     background-color: #ff650f;
 }
+
 .profile-display p{
     font-family: WorkSans;
     font-size: 18px;
 }
 
-.history-button {
+.logout-button {
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1194,15 +1198,14 @@ SHOW CART
 
     height: 36px;
 
-    /*margin-left: 20px;*/
-
-    background-color: #49784f;
+    background-color: #EE7B30;
     color: #ffffff;
 }
 
-.history-button:hover {
-    background-color: #EE7B30;
+.logout-button:hover {
+    background-color: grey;
 }
+
 .edit-button {
     width: 100%;
     display: flex;
@@ -1216,21 +1219,20 @@ SHOW CART
 
     /*margin-left: 20px;*/
 
-    background-color: #EE7B30;
+    background-color: grey;
     color: #ffffff;
 }
 
 .edit-button:hover {
-    background-color: #ff650f;
+    background-color: #EE7B30;
 }
 .delete{
     color:#000000;
 }
 .delete:hover {
-    color: red;
-    border-bottom: solid red 1px;
+    color: #EE7B30;
+    border-bottom: solid #EE7B30 1px;
     font-weight: bold;
-    /*text-decoration: red;*/
 }
 
 

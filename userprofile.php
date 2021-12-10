@@ -7,7 +7,6 @@ require_once('includes/database.php');
 //if user id cannot retrieved, terminate the script
 if (is_null($user_id)) {
     echo "Error: User ID was not found";
-//    echo $user_id;
     require_once('includes/footer.php');
     exit();
 
@@ -17,7 +16,7 @@ if (is_null($user_id)) {
 $sql = "SELECT * FROM users WHERE user_id = $user_id";
 
 //execute the query
-$query = $conn ->query($sql);
+$query = $conn->query($sql);
 
 //Handle errors
 if (!$query) {
@@ -29,16 +28,14 @@ if (!$query) {
     exit;
 }
 
-if($query->num_rows == 0){
+if ($query->num_rows == 0) {
     $conn->close();
     require 'includes/footer.php';
 
     die("user not found.");
-}else{
+} else {
     $row = $query->fetch_assoc();
 }
-
-
 
 
 ?>
@@ -51,14 +48,13 @@ if($query->num_rows == 0){
             <div class="profile-image"><img src='www/img/icons/profile_icon.svg' alt='profile'></div>
 
             <div class="summary">
-                <p><?= $name ?></p>
-                <p><?= $user_id ?></p>
-                <p>@<?= $login ?></p>
+                <p class="p-subtitle"><?= $name ?></p>
+                <p class="p-textLarge">@<?= $login ?></p>
             </div>
 
             <div class="controls">
-                <a class="history-button p-textLarge" href='#'>Order History</a>
-                <a class="edit-button p-textLarge" href='edituseraccount.php'>Edit</a>
+                <a class="edit-button p-textLarge" href='edituseraccount.php'>Edit Profile</a>
+                <a class="logout-button p-textLarge" href='logout.php'>Logout</a>
                 <a class="delete p-textSmall" href='deleteuser.php'>Delete Account</a>
             </div>
         </div>
@@ -74,39 +70,39 @@ if($query->num_rows == 0){
                     <div class="input-wrapper">
                         <label for="last_name">Last Name</label>
                         <div class="profile-display">
-                             <p><?php echo $row['last_name'] ?></p>
+                            <p><?php echo $row['last_name'] ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="input-wrapper">
                     <label for="username">Username</label>
                     <div class="profile-display">
-                         <p><?php echo $row['username'] ?></p>
+                        <p><?php echo $row['username'] ?></p>
                     </div>
                 </div>
                 <div class="input-wrapper">
                     <label for="user_email">Email</label>
                     <div class="profile-display">
-                         <p><?php echo $row['user_email'] ?></p>
+                        <p><?php echo $row['user_email'] ?></p>
                     </div>
                 </div>
                 <div class="input-wrapper">
                     <label for="address">Address</label>
                     <div class="profile-display">
-                         <p><?php echo $row['address'] ?></p>
+                        <p><?php echo $row['address'] ?></p>
                     </div>
                 </div>
                 <div class="cityState-wrapper">
                     <div class="input-wrapper city">
                         <label for="city">City</label>
                         <div class="profile-display">
-                             <p><?php echo $row['city'] . "," ?></p>
+                            <p><?php echo $row['city'] . "," ?></p>
                         </div>
                     </div>
                     <div class="input-wrapper state">
                         <label for="state">ST</label>
                         <div class="profile-display">
-                             <p><?php echo $row['state'] ?></p>
+                            <p><?php echo $row['state'] ?></p>
                         </div>
                     </div>
                 </div>

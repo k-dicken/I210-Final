@@ -44,15 +44,15 @@ if(!$query) {
 }
 
 ?>
-
-    <div id="full">
-
-        <p class="p-title">Product was successfully updated.</p>
-
-    </div>
-
+<!--    <div id="full">-->
+<!---->
+<!--        <p class="p-title">Product was successfully updated.</p>-->
+<!---->
+<!--    </div>-->
 <?php
 $conn->close();
+
+header("Location: productdetails.php?id=$product_id");
 
 include 'includes/footer.php';
 

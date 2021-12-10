@@ -1,19 +1,19 @@
 <?php
+//check session
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-
 if (!isset($_SESSION['login'])) {
     header("Location: userlogin.php");
     exit();
 }
-
 
 //empty the shopping cart
 $_SESSION['cart'] = [];
 
 //set page title
 $page_title = "Oishii";
+
 //display the header
 require_once ('includes/header.php');
 ?>

@@ -33,7 +33,6 @@ if (!$row = $query->fetch_assoc()) {
     require 'includes/footer.php';
 
     die("user not found.");
-//    echo $user_id;
 
 }
 
@@ -47,14 +46,12 @@ if (!$row = $query->fetch_assoc()) {
             <div class="profile-image"><img src='www/img/icons/profile_icon.svg' alt='profile'></div>
 
             <div class="summary">
-                <p><?= $name ?></p>
-                <p>@<?= $login ?></p>
+                <p class="p-subtitle"><?= $name ?></p>
+                <p class="p-textLarge">@<?= $login ?></p>
             </div>
 
-            <div class="controls">
-                <a class="history-button p-textLarge" href='#'>Order History</a>
-<!--                <a class="edit-button p-textLarge" href='edituseraccount.php'>Edit</a>-->
-                <a class="delete p-textSmall" href='deleteuser.php'>Delete Account</a>
+            <div style="height: 80px" class="controls">
+
             </div>
         </div>
         <div class="accInfo">
@@ -96,8 +93,10 @@ if (!$row = $query->fetch_assoc()) {
                     </div>
                 </div>
 
-                <input id="submit" type="submit" value="Update Account"/>
+                <input style="margin-top: 20px" id="submit" type="submit" value="Update Account"/>
+                <a style="margin: 40px auto;" class="delete p-textSmall" href='deleteuser.php'>Delete Account</a>
             </form>
+
         </div>
     </div>
 

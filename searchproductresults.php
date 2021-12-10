@@ -7,14 +7,14 @@
  */
 $page_title = "Search product results";
 
-require_once ('includes/header.php');
+require_once('includes/header.php');
 require_once('includes/database.php');
 
 if (filter_has_var(INPUT_GET, "terms")) {
     $terms_str = filter_input(INPUT_GET, 'terms', FILTER_SANITIZE_STRING);
 } else {
     echo "There was not search terms found.";
-    include ('includes/footer.php');
+    include('includes/footer.php');
     exit;
 }
 
@@ -36,71 +36,50 @@ if (!$query) {
     $errmsg = $conn->error;
     echo "Selection failed with: ($errno) $errmsg.";
     $conn->close();
-    include ('includes/footer.php');
+    include('includes/footer.php');
     exit;
 }
 ?>
-<!--    <table id="productlist" class="productlist">-->
-<!--        <tr>-->
-<!--            <th>Name</th>-->
-<!--            <th class="col2">Category</th>-->
-<!--            <th class="col3">Price</th>-->
-<!--        </tr>-->
 
-<!--        --><?php
-//        //insert a row into the table for each row of data
-//        while (($row = $query->fetch_assoc()) !== NULL) {
-//            echo "<tr>";
-//            echo "<td><a href='productdetails.php?id=", $row['product_id'], "'>", $row['name'], "</a></td>";
-//            echo "<td>", $row['category_id'], "</td>";
-//            echo "<td>", $row['price'], "</td>";
-//            echo "</tr>";
-//        }
-
-
-//        ?>
-<!--    </table>-->
     <div id="search-results" class="full">
+        <?php
 
+        if ($query->num_rows == 0) {
+            echo "<p class='p-title'>Your search \"$terms_str\" did not match any products in our inventory.</p>";
+            echo "<a class='search-link p-subtitle' href='searchproducts.php'>Back to search</a>";
+            echo "</div>";
+            include('includes/footer.php');
+            exit;
+        }
 
-<?php
+        //search heading
+        echo "<h2 class='p-title'>Showing \"$terms_str\"</h2>";
+        echo "<a class='search-link p-textLarge' href='searchproducts.php'>Back to search</a><br><br><br>";
 
-    if ($query->num_rows == 0) {
-        echo "<p class='p-title'>Your search \"$terms_str\" did not match any products in our inventory.</p>";
-        echo "<a class='search-link p-subtitle' href='searchproducts.php'>Back to search</a>";
-        echo "</div>";
-        include ('includes/footer.php');
-        exit;
-    }
+        //display results
+        while ($row = $query->fetch_assoc()) {
+            $product_id = $row['product_id'];
+            $name = $row['name'];
+            $price = $row['price'];
+            $image = $row['image'];
+            echo "<a style='color: black; text-decoration: none' href='productdetails.php?id=$product_id' class='cart-item'>",
+            "<div style='background-image: url(\"www/img/images/", $image, "\")' class='cart-img'></div>",
+            "<div class='cart-item-info'>",
+            "<p class='p-subtitle cart-item-name'>$name</p>",
+            "<p class='p-textLarge cart-item-price'>$$price</p>",
+            "</div>",
+            "</a>";
 
-    //search heading
-    echo "<h2 class='p-title'>Showing \"$terms_str\"</h2>";
-    echo "<a class='search-link p-textLarge' href='searchproducts.php'>Back to search</a><br><br><br>";
-
-    //display results
-    while ($row = $query->fetch_assoc()) {
-        $product_id = $row['product_id'];
-        $name = $row['name'];
-        $price = $row['price'];
-        $image = $row['image'];
-        echo "<a style='color: black; text-decoration: none' href='productdetails.php?id=$product_id' class='cart-item'>",
-        "<div style='background-image: url(\"www/img/images/", $image, "\")' class='cart-img'></div>",
-        "<div class='cart-item-info'>",
-        "<p class='p-subtitle cart-item-name'>$name</p>",
-        "<p class='p-textLarge cart-item-price'>$$price</p>",
-        "</div>",
-        "</a>";
-
-    }
-?>
+        }
+        ?>
     </div>
     <br>
 
 <?php
-// clean up resultsets when we're done with them!
+// clean up result sets when we're done with them
 $query->close();
 
-// close the connection.
+// close the connection
 $conn->close();
 
-include ('includes/footer.php');
+include('includes/footer.php');

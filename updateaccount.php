@@ -35,13 +35,11 @@ city = '$city',
 state = '$state',
 role = '$role' WHERE user_id = $user_id";
 
-//echo $sql;
-
 //execute the query
 $query = @$conn->query($sql);
 
 //handle error
-if(!$query) {
+if (!$query) {
     $errno = $conn->errno;
     $errmsg = $conn->error;
     echo "Insertion failed with: ($errno) $errmsg<br/>\n";
@@ -52,10 +50,8 @@ if(!$query) {
 
 ?>
 
-    <div id="full">
-
+    <div id="full page-display">
         <p class="p-title">Account was successfully updated.</p>
-
     </div>
 
 <?php
