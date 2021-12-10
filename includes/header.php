@@ -20,16 +20,21 @@ if(isset($_SESSION['cart'])) {
 //variables for a user’s login, name, and role
 $login = '';
 $name = '';
+$user_id = '';
 $role = 0;
 
-//if the use has logged in, retrieve login, name, and role.
+//if the user has logged in, retrieve login, name, role, and user_id.
 if (isset($_SESSION['login'])
     AND isset($_SESSION['name'])
-    AND isset($_SESSION['role']))   {
+    AND isset($_SESSION['role'])
+    AND isset($_SESSION['user_id'])
+) {
+
 
     $login = $_SESSION['login'];
     $name = $_SESSION['name'];
     $role = $_SESSION['role'];
+    $user_id = $_SESSION['user_id'];
 }
 
 ?>
@@ -51,7 +56,7 @@ if (isset($_SESSION['login'])
         <!--logo-->
         <div id="header-logo" class="logo"><a class="p-title" href="index.php">Oishii</a>
             <?php
-            if ($role != null) {
+            if ($name != null) {
                 echo "<span class='greeting' style='color:#EE7B30; font-size: 16px;'>Konichiwa, $name!</style>";
             }else {
             }
@@ -81,8 +86,8 @@ if (isset($_SESSION['login'])
                 echo "<a class='signin-button' style='color:white' href='userlogin.php'>LOGIN</a>";
             } else {
                 echo "<a class='profileButton' href='userprofile.php'><img src='www/img/icons/profile_hollow_icon.svg' alt='profile'></a>";
+                echo "<a class='signin-button' style='color:white ' href='logout.php'>Logout</a>";
 //                echo "<span style='color:red; margin‐left:30px'>Welcome $name!</style>";
-
 //                echo "<a class='signin-button' style='color:white' href='userlogin.php'>SIGN IN</a>";
             }
             ?>

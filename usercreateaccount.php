@@ -66,6 +66,16 @@ if ($login_status == 2) {
                 <label for="address">Address</label>
                 <input class="login-field" name="address" type="text" required>
             </div>
+            <div class="cityState-wrapper">
+                <div class="input-wrapper city">
+                    <label for="city_name">City</label>
+                    <input class="login-field" name="city_name" type="text" required>
+                </div>
+                <div class="input-wrapper state">
+                    <label for="state">State</label>
+                    <input class="login-field" name="state" type="text" required>
+                </div>
+            </div>
 
             <input id="submit" type="submit" onclick="window.location.href ='register.php'" value="Sign Up"/>
         </form>

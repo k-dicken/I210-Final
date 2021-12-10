@@ -1,5 +1,5 @@
 <?php
-$page_title = "Oishii - Profile";
+$page_title = "Edit Account";
 
 require_once('includes/header.php');
 require_once('includes/database.php');
@@ -7,17 +7,16 @@ require_once('includes/database.php');
 //if user id cannot retrieved, terminate the script
 if (is_null($user_id)) {
     echo "Error: User ID was not found";
-//    echo $user_id;
+    echo $user_id;
     require_once('includes/footer.php');
     exit();
-
 }
 
 //MySQL SELECT statement
 $sql = "SELECT * FROM users WHERE user_id = $user_id";
 
 //execute the query
-$query = $conn ->query($sql);
+$query = $conn->query($sql);
 
 //Handle errors
 if (!$query) {
@@ -29,17 +28,14 @@ if (!$query) {
     exit;
 }
 
-if($query->num_rows == 0){
+if (!$row = $query->fetch_assoc()) {
     $conn->close();
     require 'includes/footer.php';
 
     die("user not found.");
-}else{
-    $row = $query->fetch_assoc();
+//    echo $user_id;
+
 }
-
-
-
 
 ?>
 
@@ -52,65 +48,55 @@ if($query->num_rows == 0){
 
             <div class="summary">
                 <p><?= $name ?></p>
-                <p><?= $user_id ?></p>
                 <p>@<?= $login ?></p>
             </div>
 
             <div class="controls">
                 <a class="history-button p-textLarge" href='#'>Order History</a>
-                <a class="edit-button p-textLarge" href='edituseraccount.php'>Edit</a>
+<!--                <a class="edit-button p-textLarge" href='edituseraccount.php'>Edit</a>-->
                 <a class="delete p-textSmall" href='deleteuser.php'>Delete Account</a>
             </div>
         </div>
         <div class="accInfo">
-            <form action="register.php" method="post">
+            <form action="updateaccount.php" method="post">
                 <div class="name-wrapper">
                     <div class="input-wrapper">
                         <label for="first_name">First Name</label>
-                        <div class="profile-display">
-                            <p><?php echo $row['first_name'] ?></p>
-                        </div>
+                        <input class="login-field" name="first_name" type="text" required value="<?php echo $row['first_name'] ?>">
                     </div>
                     <div class="input-wrapper">
                         <label for="last_name">Last Name</label>
-                        <div class="profile-display">
-                             <p><?php echo $row['last_name'] ?></p>
-                        </div>
+                        <input class="login-field" name="last_name" type="text" required value="<?php echo $row['last_name'] ?>">
                     </div>
                 </div>
                 <div class="input-wrapper">
                     <label for="username">Username</label>
-                    <div class="profile-display">
-                         <p><?php echo $row['username'] ?></p>
-                    </div>
+                    <input name="username" type="text" class="login-field" required value="<?php echo $row['username'] ?>">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <input type='password' name='password' class="login-field" required>
                 </div>
                 <div class="input-wrapper">
                     <label for="user_email">Email</label>
-                    <div class="profile-display">
-                         <p><?php echo $row['user_email'] ?></p>
-                    </div>
+                    <input class="login-field" name="user_email" type="email" required value="<?php echo $row['user_email'] ?>">
                 </div>
                 <div class="input-wrapper">
                     <label for="address">Address</label>
-                    <div class="profile-display">
-                         <p><?php echo $row['address'] ?></p>
-                    </div>
+                    <input class="login-field" name="address" type="text" required value="<?php echo $row['address'] ?>">
                 </div>
                 <div class="cityState-wrapper">
                     <div class="input-wrapper city">
                         <label for="city">City</label>
-                        <div class="profile-display">
-                             <p><?php echo $row['city'] . "," ?></p>
-                        </div>
+                        <input class="login-field" name="city" type="text" required value="<?php echo $row['city']?>">
                     </div>
                     <div class="input-wrapper state">
                         <label for="state">ST</label>
-                        <div class="profile-display">
-                             <p><?php echo $row['state'] ?></p>
-                        </div>
+                        <input class="login-field" name="state" type="text" required value="<?php echo $row['state'] ?>">
                     </div>
                 </div>
 
+                <input id="submit" type="submit" value="Update Account"/>
             </form>
         </div>
     </div>

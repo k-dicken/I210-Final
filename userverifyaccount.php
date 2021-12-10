@@ -29,7 +29,9 @@ if  ($query ->num_rows){
     $row = $query ->fetch_assoc();
     $_SESSION['login'] = $username;
     $_SESSION['role'] = $row['role'];
+    $_SESSION['user_id'] = $row['user_id'];
     $_SESSION['name'] = $row['first_name'] . " " . $row['last_name'];
+//    $_SESSION['fname'] = $row['first_name'];
     $_SESSION['login_status'] = 1;
 }
 
